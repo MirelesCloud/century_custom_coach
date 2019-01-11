@@ -2,6 +2,9 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
 const Feature = () => (
   <div>
     <StaticQuery
@@ -41,12 +44,12 @@ const Feature = () => (
                         <Img fluid={data.feature1.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="#"><i className="flaticon-tool-1"></i></a>
+                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="#">Expert Mechanic</a></h4>
+                        <h4><a href="https://example.com">Expert Mechanic</a></h4>
                       </div>
                     </div>
                   </div>
@@ -56,12 +59,12 @@ const Feature = () => (
                         <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="#"><i className="flaticon-tool-1"></i></a>
+                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="#">Pro Body Shop</a></h4>
+                        <h4><a href="https://example.com">Pro Body Shop</a></h4>
                       </div>
                     </div>
                   </div>
@@ -71,12 +74,12 @@ const Feature = () => (
                         <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="#"><i className="flaticon-tool-1"></i></a>
+                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="#">Pro Paint Shop</a></h4>
+                        <h4><a href="https://example.com">Pro Paint Shop</a></h4>
                       </div>
                     </div>
                   </div>

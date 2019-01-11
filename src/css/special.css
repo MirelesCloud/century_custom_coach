@@ -97,7 +97,7 @@
   position: relative;
   background: #c21605;
   line-height: 50px;
-  height: 50px;
+
 }
 
 .top-bar .top-bar-text li {
@@ -774,7 +774,7 @@
 }
 .features .item .content h4 a:before{
     color: #222;
-    content: "\f0a9";
+    content: "";
     font-family: "FontAwesome";
     font-size: 16px;
     right: 20px;

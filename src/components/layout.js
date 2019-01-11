@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
@@ -13,6 +12,7 @@ import Gallery from './gallery'
 import Reviews from './reviews'
 import LastBanner from './final-banner'
 import Footer from './footer'
+import MirelesCloud from './mirelescloud'
 
 
 
@@ -57,6 +57,7 @@ const Layout = ({children}) => (
           <Reviews/>
           <LastBanner/>
           <Footer/>
+          <MirelesCloud/>
         </>
       )}
     />

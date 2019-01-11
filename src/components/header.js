@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 import Navbar from './navbar'
 import Intro from './intro'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneVolume, faEnvelope, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = ({siteTitle}) => (
@@ -12,8 +13,8 @@ const Header = ({siteTitle}) => (
 		    <div class="container">
 		        <div class="clearfix">
 		            <ul class="top-bar-text float_left">
-		                <li><i class="fa fa-phone"></i>(310) 478-5855</li>
-		                <li><i class="fa fa-envelope"></i>CenturyCustomCoach@gmail.com</li>
+		                <li><i class="fa fa-phone"><FontAwesomeIcon icon={faPhoneVolume}/></i>(310) 478-5855</li>
+		                <li><i class="fa fa-envelope"><FontAwesomeIcon icon={faEnvelope}/></i>CenturyCustomCoach@gmail.com</li>
 		            </ul>
 		        </div>
 		    </div>
@@ -34,7 +35,7 @@ const Header = ({siteTitle}) => (
 
 
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-phone-call"></span></div>
+		                    <div className="icon-box"><span className="flaticon-phone-call"><FontAwesomeIcon icon={faPhoneVolume} className="fa-2x m-2"/></span></div>
 		                    <ul className="list-unstyled">
 		                        <li><strong>Call Us</strong></li>
 		                        <li>(310) 478-5855</li>
@@ -43,7 +44,7 @@ const Header = ({siteTitle}) => (
 
 
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-location"></span></div>
+		                    <div className="icon-box"><span className="flaticon-location"><FontAwesomeIcon icon={faMapMarkerAlt} className="fa-2x m-2"/></span></div>
 		                    <ul className="list-unstyled">
 		                        <li><strong>Our Address</strong></li>
 		                        <li>2237 Barry Ave, Los Angeles, CA 90064</li>
@@ -52,7 +53,7 @@ const Header = ({siteTitle}) => (
 
 
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-clock"></span></div>
+		                    <div className="icon-box"><span className="flaticon-clock"><FontAwesomeIcon icon={faClock} className="fa-2x m-2"/></span></div>
 		                    <ul className="list-unstyled">
 		                        <li><strong>Working Hour</strong></li>
 		                        <li>Mon- Fri : 8 am - 6 pm</li>

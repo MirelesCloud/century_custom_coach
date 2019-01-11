@@ -1,9 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSprayCan } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faPinterestSquare, faInstagram, } from '@fortawesome/free-brands-svg-icons'
+
 import Background from '../images/services/bg1.png'
 
 const Services = (props) => (
@@ -40,8 +39,6 @@ const Services = (props) => (
     <div class="container">
       <div class="sec-title text-center">
                 <h2>Our <span>Services</span></h2>
-                <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
             </div>
       <div class="row">
 

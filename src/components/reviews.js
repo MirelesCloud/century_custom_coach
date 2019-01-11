@@ -1,7 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import Background from '../images/tires.jpg'
+
 
 
 const Reviews = () => (
