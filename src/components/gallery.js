@@ -1,108 +1,129 @@
 import React from 'react'
 //import Modal from 'react-responsive-modal'
 import Img from 'gatsby-image'
-
-
-class Gallery extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      'imageOpen': false,
-      'selectedImage': this.props.images[0]
-    }
-
-
-  }
+import { StaticQuery, graphql } from 'gatsby'
+import Background from '../images/tires.jpg'
 
 
 
-  render() {
-    const { images } = this.props
-    return (
-      <span >
-        <div className="container-fluid bg-light standard-border">
-          <div className="row pt-5 pb-4">
-            <div className="col-lg" >
-              <h3 className="text-gray text-center header-style" >Salon Gallery</h3>
-              <hr/>
-              <p className="pl-5 pr-5">Every day, right in our hair salon we are waiting for you, dear customer. Our best stylists are here to give you your dream hairs.</p>
-            </div>
-          </div>
-          <div className="row image-filter" id='gallery'>
-            {images.map((img) => (
-              <div className="col-lg-3 col-md-4 col-xs-6"  >
-                <div  className="d-block mb-4 h-100 gallery" >
-                  <Img fluid={img.node.childImageSharp.fluid}/>
+const Gallery = () => (
+  <div>
+    <StaticQuery
+      query={graphql`
+        query GalleryImageQuery {
+          gallery1: file(relativePath: {eq: "images/gallery/project1.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          gallery2: file(relativePath: {eq: "images/gallery/project2.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          gallery3: file(relativePath: {eq: "images/gallery/project4.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          gallery4: file(relativePath: {eq: "images/gallery/project3.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+        }
+      `}
+        render={data => (
+          <>
+          <section className="our-projects padd-1">
+  			    <div className="sec-title text-center">
+  	            <h2>Projects <span>Gallery</span></h2>
+  	        </div>
+
+              <div className="row">
+                <div className="col-md-3 col-sm-6 col-xs-12">
+                  <article className="single-item">
+                      <div className="inner-box">
+                          <div className="image-box">
+                              <Img fluid={data.gallery1.childImageSharp.fluid} alt="Audi Logo"/>
+                              <div className="caption">Engine Replace</div>
+                              <div className="overlay-box">
+                                  <div className="inner">
+                                      <a href="projects.html"><i className="flaticon-tool-1"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </span>
 
-    );
-  }
-}
+
+
+                <div className="col-md-3 col-sm-6 col-xs-12">
+                  <article className="single-item">
+                      <div className="inner-box">
+                          <div className="image-box">
+                              <Img fluid={data.gallery2.childImageSharp.fluid} alt="Audi Logo"/>
+                              <div className="caption">Body Repair and Paint</div>
+                              <div className="overlay-box">
+                                  <div className="inner">
+                                      <a href="projects.html"><i className="flaticon-tool-1"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
+                </div>
+
+                  <div className="col-md-3 col-sm-6 col-xs-12">
+                    <article className="single-item">
+                        <div className="inner-box">
+                            <div className="image-box">
+                                <Img fluid={data.gallery3.childImageSharp.fluid} alt="Audi Logo"/>
+                                <div className="caption">Car Repair</div>
+                                <div className="overlay-box">
+                                    <div className="inner">
+                                        <a href="projects.html"><i className="flaticon-tool-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                  </div>
+
+                  <div className="col-md-3 col-sm-6 col-xs-12">
+                    <article className="single-item">
+                        <div className="inner-box">
+                            <div className="image-box">
+                                <Img fluid={data.gallery4.childImageSharp.fluid} alt="Audi Logo"/>
+                                <div className="caption">Car Observation</div>
+                                <div className="overlay-box">
+                                    <div className="inner">
+                                        <a href="projects.html"><i className="flaticon-tool-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                  </div>
+
+
+
+              </div>
+        </section>
+          </>
+        )}
+      />
+  </div>
+)
 
 
 export default Gallery
-
-/*
-class Gallery extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      'imageOpen': false,
-      'selectedImage': this.props.images[0]
-    }
-
-    this.openImage = this.openImage.bind(this);
-    this.closeImage = this.closeImage.bind(this);
-
-
-  }
-
-  openImage(evt, images) {
-    this.setState({
-      'imageOpen': true,
-      'selectedImage': images
-    })
-  }
-
-  closeImage(evt) {
-    this.setState({
-      'imageOpen': false
-    })
-  }
-
-
-
-  render() {
-    const { images } = this.props
-    return (
-      <span>
-        <div className="container-fluid bg-light standard-border">
-          <div className="row pt-5 pb-4">
-            <div className="col-lg">
-              <h3 className="text-gray text-center header-style">Salon Gallery</h3>
-              <hr/>
-              <p className="pl-5 pr-5">Every day, right in our hair salon we are waiting for you, dear customer. Our best stylists are here to give you your dream hairs.</p>
-            </div>
-          </div>
-          <div className="row image-filter">
-            {images.map((img) => (
-              <div className="col-lg-3 col-md-4 col-xs-6" >
-                <div  className="d-block mb-4 h-100 gallery">
-                  <Img fluid={img.node.childImageSharp.fluid}/>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </span>
-
-    );
-  }
-}
-
-*/

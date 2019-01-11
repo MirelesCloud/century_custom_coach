@@ -1,6 +1,10 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSprayCan } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faPinterestSquare, faInstagram, } from '@fortawesome/free-brands-svg-icons'
+import Background from '../images/services/bg1.png'
 
 const Services = (props) => (
   <section id='services'>
@@ -32,40 +36,139 @@ const Services = (props) => (
       `}
       render={data => (
         <>
-          <div className="container-fluid bg-light standard-border" >
-            <div className="row pt-5">
-              <div className="col-lg">
-                <h3 className="text-center header-style">Our Services</h3>
-                <hr/>
-              </div>
+        <section class="our-services padd-1" style={{backgroundImage:`url(${Background})`}}>
+    <div class="container">
+      <div class="sec-title text-center">
+                <h2>Our <span>Services</span></h2>
+                <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
             </div>
-            <div className="row text-lg-left">
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair1.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Hair Cut</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair2.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Coloring</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-4 col-xs-6">
-                <div className="d-block mb-4 h-100">
-                  <Img fluid={data.imageHair3.childImageSharp.fluid} className="image-filter"/>
-                  <h4 className="text-center header-style mt-3">Skin Care</h4>
-                  <hr/>
-                  <p className="text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-              </div>
+      <div class="row">
+
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-repair-mechanism"></i>
+
+            </div>
+            <div class="content-box">
+              <h3>Engine Replace</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
             </div>
           </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-car-washing-machine"></i>
+            </div>
+            <div class="content-box">
+              <h3>Car Wash</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-transport"></i>
+            </div>
+            <div class="content-box">
+              <h3>Car Observation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-car-wheel"></i>
+            </div>
+            <div class="content-box">
+              <h3>Tire Repair</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-paint-2"></i>
+              <FontAwesomeIcon icon={faSprayCan} className="fa-2x m-2" />
+            </div>
+            <div class="content-box">
+              <h3>Car Paint</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-man-with-car"></i>
+            </div>
+            <div class="content-box">
+              <h3>Home Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-malfunction-indicador"></i>
+            </div>
+            <div class="content-box">
+              <h3>Engine Repair</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="single-item">
+            <div class="icon-box">
+              <i class="flaticon-car-with-wrench"></i>
+            </div>
+            <div class="content-box">
+              <h3>Servicing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
+
+              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
         </>
       )}
     />

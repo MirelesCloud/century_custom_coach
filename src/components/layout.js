@@ -3,8 +3,14 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
-
 import Header from './header'
+import Feature from './feature'
+import About from './about'
+import Model from './model'
+import Services from './services'
+import LowerBackground from './lower-banner'
+import Gallery from './gallery'
+import Reviews from './reviews'
 
 
 
@@ -19,7 +25,7 @@ const Layout = ({children}) => (
           title
         }
       }
-      file(relativePath: {eq: "images/home/header.jpg"}) {
+      file(relativePath: {eq: "images/home/nikolay-tchaouchev-785292-unsplash.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -38,35 +44,20 @@ const Layout = ({children}) => (
             ]}
           >
             <html lang="en" />
-
           </Helmet>
-
-          <Img
-            fluid={data.file.childImageSharp.fluid}
-            style={{
-              width: '100%',
-              height: '80%',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              position: 'absolute',
-            }}
-          />
-
           <Header image={data.site.siteMetadata.title}/>
-
-
+          <Feature/>
+          <About/>
+          <Model/>
+          <Services/>
+          <LowerBackground/>
+          <Gallery/>
+          <Reviews/>
         </>
       )}
     />
-    <div className="main-container mb-5">
-      {children}
-    </div>
-
-
 
   </div>
-
 )
 
 export default Layout

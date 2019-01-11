@@ -1,42 +1,24 @@
 import React from "react"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
+import { graphql } from 'gatsby'
 
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/main.css'
+import '../css/special.css'
 import '../css/contact.css'
-import { graphql } from 'gatsby'
+import '../css/responsive.css'
+import '../css/owl.css'
 
 
-
-//import Section from "../components/test"
 import Layout from "../components/layout"
-import Services from '../components/services'
-import Intro from '../components/intro'
-
-
-import StoreMap from '../components/contact'
-import Gallery from '../components/gallery'
-import Footer from '../components/footer'
-import Top from '../components/top-button'
-//import Playground from '../components/playground'
-
 
 const TemplateWrapper = ({data}) => (
   <div>
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
-
-    {/*<Test imageHair={data.imageHair.childImageSharp}/>*/}
-
     <Layout>
-      <Intro/>
-      <Services/>
-      <Gallery images={data.imageGallery.edges}/>
-      <StoreMap/>
-      <Footer/>
     </Layout>
-    <Top/>
   </div>
 )
 

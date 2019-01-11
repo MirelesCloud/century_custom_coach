@@ -3,26 +3,42 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 const Navbar = () => (
-  <div className="container" id='/'>
-    <nav className="navbar navbar-expand-sm navbar-dark">
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <AnchorLink  className="nav-item nav-link active" href='#/'>Home <span className="sr-only">(current)</span></AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#appointment'>Appointment</AnchorLink>
-          <AnchorLink offset='-400' className="nav-item nav-link" href='#services'>Services</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#pricing'>Pricing</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#gallery'>Gallery</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#hours'>Hours</AnchorLink>
-          <AnchorLink offset='-300' className="nav-item nav-link" href='#contact'>Contact</AnchorLink>
+  <section className="container">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black nav">
 
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  <div className="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto" style={{fontSize:"1.1rem"}}>
+      <li className="nav-item active">
+        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Link</a>
+      </li>
+      <li className="nav-item dropdown">
+        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a className="dropdown-item" href="#">Action</a>
+          <a className="dropdown-item" href="#">Another action</a>
+          <div className="dropdown-divider"></div>
+          <a className="dropdown-item" href="#">Something else here</a>
         </div>
-      </div>
-    </nav>
-  </div>
+      </li>
 
+    </ul>
+    <form className="form-inline my-2 my-lg-0">
+      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+  </section>
 )
 
 

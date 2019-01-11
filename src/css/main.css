@@ -10,37 +10,6 @@
     border-radius: 5px
 }
 
-@media screen and (max-width: 1199px) {
-  #hours {
-    display: none;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-  #hours-responsive {
-    display: none;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  #hairdresser {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 644px) {
-  #appointment {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 645px) {
-  #appointment-mobile {
-    display: none;
-  }
-}
 
 .to-top {
   position: fixed;
@@ -52,15 +21,22 @@
   opacity: 0.5;
 }
 
+.bg-red {
+  background-color: #c21605;
+}
 
+.bg-black {
+  background-color: #000000;
+}
 
-
+.nav {
+  z-index: 1;
+}
 
 .image-filter {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-
 
 .banner-image {
   background-size: cover !important;
@@ -78,4 +54,20 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+/*******Carousel*******/
+.carousel-header-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-header {
+  font-size: 6vw;
+  background: rgba(72,72,72,0.45);
+  color: #fff;
+  padding: 0.7rem;
+
 }
