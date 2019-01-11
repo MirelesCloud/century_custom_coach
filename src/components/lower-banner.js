@@ -32,13 +32,13 @@ const LowerBackground = (props) => (
       `}
       render={data => (
         <>
-        <section class="parallax-style padd-1" style={{backgroundImage:`url(${Background})`}}>
-	        <div class="container">
-	            <div class="text-center">
+        <section className="parallax-style padd-1" style={{backgroundImage:`url(${Background})`}}>
+	        <div className="container">
+	            <div className="text-center">
 	                <h2>We are the first and trusted car repair company in your West L.A. The best service is our goal.</h2>
-	                <div class="text">Some lorem ipsum subtitle will be here ipsum dolor</div>
-	                <a href="contact.html" class="btn-style-five">Contact Us</a>
-	                <a href="https://example.com" class="btn-style-eight">Learn More</a>
+	                <div className="text">Some lorem ipsum subtitle will be here ipsum dolor</div>
+	                <a href="contact.html" className="btn-style-five">Contact Us</a>
+	                <a href="https://example.com" className="btn-style-eight">Learn More</a>
 	            </div>
 	        </div>
 	    </section>

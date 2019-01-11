@@ -9,12 +9,12 @@ import { faPhoneVolume, faEnvelope, faClock, faMapMarkerAlt } from '@fortawesome
 
 const Header = ({siteTitle}) => (
   <header>
-    <div class="top-bar">
-		    <div class="container">
-		        <div class="clearfix">
-		            <ul class="top-bar-text float_left">
-		                <li><i class="fa fa-phone"><FontAwesomeIcon icon={faPhoneVolume}/></i>(310) 478-5855</li>
-		                <li><i class="fa fa-envelope"><FontAwesomeIcon icon={faEnvelope}/></i>CenturyCustomCoach@gmail.com</li>
+    <div className="top-bar">
+		    <div className="container">
+		        <div className="clearfix">
+		            <ul className="top-bar-text float_left">
+		                <li><i className="fa fa-phone"><FontAwesomeIcon icon={faPhoneVolume}/></i>(310) 478-5855</li>
+		                <li><i className="fa fa-envelope"><FontAwesomeIcon icon={faEnvelope}/></i>CenturyCustomCoach@gmail.com</li>
 		            </ul>
 		        </div>
 		    </div>

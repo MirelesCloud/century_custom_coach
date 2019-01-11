@@ -35,128 +35,128 @@ const Services = (props) => (
       `}
       render={data => (
         <>
-        <section class="our-services padd-1" style={{backgroundImage:`url(${Background})`}}>
-    <div class="container">
-      <div class="sec-title text-center">
+        <section className="our-services padd-1" style={{backgroundImage:`url(${Background})`}}>
+    <div className="container">
+      <div className="sec-title text-center">
                 <h2>Our <span>Services</span></h2>
             </div>
-      <div class="row">
+      <div className="row">
 
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-repair-mechanism"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-repair-mechanism"></i>
 
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Engine Replace</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-car-washing-machine"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-car-washing-machine"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Car Wash</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-transport"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-transport"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Car Observation</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-car-wheel"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-car-wheel"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Tire Repair</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-paint-2"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-paint-2"></i>
               <FontAwesomeIcon icon={faSprayCan} className="fa-2x m-2" />
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Car Paint</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-man-with-car"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-man-with-car"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Home Service</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-malfunction-indicador"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-malfunction-indicador"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Engine Repair</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="single-item">
-            <div class="icon-box">
-              <i class="flaticon-car-with-wrench"></i>
+        <div className="col-md-3 col-sm-6 col-xs-12">
+          <div className="single-item">
+            <div className="icon-box">
+              <i className="flaticon-car-with-wrench"></i>
             </div>
-            <div class="content-box">
+            <div className="content-box">
               <h3>Servicing</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i class="fa fa-caret-right"></i></a>
+              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
 

@@ -47,17 +47,20 @@ const Layout = ({children}) => (
           >
             <html lang="en" />
           </Helmet>
-          <Header image={data.site.siteMetadata.title}/>
-          <Feature/>
-          <About/>
-          <Model/>
-          <Services/>
-          <LowerBackground/>
-          <Gallery/>
-          <Reviews/>
-          <LastBanner/>
-          <Footer/>
-          <MirelesCloud/>
+          <div className="boxed_wrapper">
+            <Header image={data.site.siteMetadata.title}/>
+            <Feature/>
+            <About/>
+            <Model/>
+            <Services/>
+            <LowerBackground/>
+            <Gallery/>
+            <Reviews/>
+            <LastBanner/>
+            <Footer/>
+            <MirelesCloud/>
+          </div>
+
         </>
       )}
     />

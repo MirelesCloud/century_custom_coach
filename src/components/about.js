@@ -26,12 +26,12 @@ const About = () => (
       `}
         render={data => (
           <>
-          <section class="about-section padd-2" style={{backgroundImage:`url(${Background})`}}>
-           <div class="container">
-               <div class="row">
-                 <div class="col-md-6 col-sm-12 col-xs-12">
-                       <div class="single-item">
-                           <figure class="image-box">
+          <section className="about-section padd-2" style={{backgroundImage:`url(${Background})`}}>
+           <div className="container">
+               <div className="row">
+                 <div className="col-md-6 col-sm-12 col-xs-12">
+                       <div className="single-item">
+                           <figure className="image-box">
                              <Img fluid={data.about.childImageSharp.fluid} alt="header"/>
 
 
@@ -39,18 +39,18 @@ const About = () => (
                        </div>
                    </div>
 
-                   <div class="col-md-6 col-sm-12 col-xs-12">
+                   <div className="col-md-6 col-sm-12 col-xs-12">
 
-                       <div class="single-item style-two">
-                           <div class="sec-title">
+                       <div className="single-item style-two">
+                           <div className="sec-title">
                        <h2>About  <span>Century<span style={{color:"#000000"}}>Custom</span>Coach</span></h2>
                    </div>
 
                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,</p>
-                           <p class="style-2">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit.</p>
+                           <p className="style-2">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit.</p>
 
-                           <div class="link_btn">
-                               <a href="about.html" class="btn-style-one">read more</a>
+                           <div className="link_btn">
+                               <a href="about.html" className="btn-style-one">read more</a>
                            </div>
                        </div>
 
