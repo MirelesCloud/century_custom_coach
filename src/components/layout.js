@@ -11,6 +11,8 @@ import Services from './services'
 import LowerBackground from './lower-banner'
 import Gallery from './gallery'
 import Reviews from './reviews'
+import LastBanner from './final-banner'
+import Footer from './footer'
 
 
 
@@ -53,6 +55,8 @@ const Layout = ({children}) => (
           <LowerBackground/>
           <Gallery/>
           <Reviews/>
+          <LastBanner/>
+          <Footer/>
         </>
       )}
     />

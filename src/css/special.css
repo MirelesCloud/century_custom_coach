@@ -97,6 +97,7 @@
   position: relative;
   background: #c21605;
   line-height: 50px;
+  height: 50px;
 }
 
 .top-bar .top-bar-text li {
@@ -529,12 +530,12 @@
 		margin-right: 30px;
 	}
 
-	.subscribe-us{
+	.last-banner{
 		text-align: center;
 		padding: 28px 0px 42px;
 	}
 
-	.subscribe-us .pull-right{
+	.last-banner .pull-right{
 		float: none !important;
 		text-align: center;
 		margin-top: 20px;
@@ -1587,4 +1588,258 @@
   color: #fff;
   cursor: pointer;
   border: 2px solid#c21605;
+}
+/*
+=======================================================
+  16. Last Banner
+=======================================================
+*/
+
+.last-banner {
+  background: #c21605;
+  padding: 28px 0px;
+  color: #fff;
+}
+.last-banner h3 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 8px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+
+.last-banner a.thm-btn {
+    padding: 0px 20px;
+    background: #c21605;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+}
+.last-banner a.thm-btn.inverse:hover {
+  color: #fff;
+  background: #c21605;
+  border:2px solid #fff;
+}
+
+
+/*
+===================================================
+  25. footer style
+===================================================
+*/
+.footer{
+  position: relative;
+  border-top: 2px solid #c21605;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.footer:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.78);
+}
+.footer p{
+   font-family: 'Montserrat', sans-serif;
+   font-weight:400;
+   font-size:14px;
+   color: #fff;
+   line-height: 27px;
+}
+.footer .footer-upper {
+    padding: 70px 0px 60px;
+}
+.footer-widget ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-widget ul li {
+    list-style: none;
+}
+
+.footer-widget.about-widget p {
+    margin: 0;
+}
+.footer-widget h3.title {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.about-widget .social-links{
+  margin-top: 20px;
+}
+.about-widget .social-links a{
+  display:inline-block;
+  font-size: 14px;
+  font-weight:normal;
+  color: #fff;
+  line-height: 35px;
+  margin-right: 1px;
+  border: 2px solid #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.about-widget .social-links a:hover{
+  color: #c21605;
+}
+
+
+
+.row-10{
+  margin:0px -10px;
+
+}
+.footer.bg-style .footer-upper .about-widget .image-box{
+  margin-bottom: 20px;
+}
+.footer.bg-style .footer-upper .about-widget .image-box img{
+  width: auto;
+}
+.footer.bg-style .footer-upper {
+    padding: 80px 0 70px;
+}
+.footer.bg-style .footer-widget h3.title {
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+}
+.footer.bg-style .footer-widget h3.title:before{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    width: 89px;
+    height: 3px;
+    background-image: url(../images/ftb.png);
+}
+/*============ quick-links =================*/
+
+.footer-widget.quick-links ul li a {
+    font-size: 14px;
+    line-height: 38px;
+    tranisition: all .3s ease;
+}
+.footer-widget.quick-links ul li a:hover {
+    color: #d62929;
+}
+.footer.bg-style .footer-widget.quick-links ul li {
+
+    margin-bottom: 8px;
+}
+.footer.bg-style .footer-widget.quick-links ul li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    padding-left: 26px;
+    position: relative;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer.bg-style .footer-widget.quick-links ul li a:before {
+    color: #c21605;
+    content: "\f054";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    left: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 4px;
+}
+.footer.bg-style .footer-widget.quick-links ul li a:hover {
+    color: #fff;
+}
+.footer.bg-style .footer-widget.quick-links ul li a:hover:before{
+  color: #fff;
+}
+
+/*============ opening-hour =================*/
+.footer-widget.opening-hour{
+  color:#adadad;
+}
+.footer-widget.opening-hour span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    line-height: 30px;
+}
+.footer-widget.opening-hour .day-time{
+    margin-top: 10px;
+}
+
+
+.footer-widget.opening-hour .day-time li :last-child {
+  color: #c21605;
+  font-weight: 700;
+}
+/*============ experts-column =================*/
+
+.footer-widget.experts-column ul li a {
+    font-size: 14px;
+    line-height: 38px;
+    transition: all .3s ease;
+}
+.footer-widget.experts-column ul li a:hover {
+    color: #d62929;
+}
+.footer.bg-style .footer-widget.experts-column ul li {
+
+    margin-bottom: 8px;
+}
+.footer.bg-style .footer-widget.experts-column ul li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    padding-left: 26px;
+    position: relative;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer.bg-style .footer-widget.experts-column ul li a:before {
+    color: #c21605;
+    content: "\f054";
+    font-family: "FontAwesome";
+    font-size: 13px;
+    left: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 4px;
+}
+.footer.bg-style .footer-widget.experts-column ul li a:hover {
+    color: #fff;
+}
+.footer.bg-style .footer-widget.experts-column ul li a:hover:before{
+  color: #fff;
+}
+
+
+.footer-bottom{
+  border-top: 1px solid #c21605;
+  background: #000;
+  color: #fff;
+  padding: 20px 0px 20px;
+}
+
+.footer-bottom .copyright-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size:14px;
+  color: #fff;
+}
+.footer-bottom span{
+  color: #c21605;
+  font-size: 16px;
+  font-weight: 700;
 }

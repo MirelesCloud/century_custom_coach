@@ -7,18 +7,17 @@ import Intro from './intro'
 
 
 const Header = ({siteTitle}) => (
-  <section>
-    <header class="top-bar">
+  <header>
+    <div class="top-bar">
 		    <div class="container">
 		        <div class="clearfix">
 		            <ul class="top-bar-text float_left">
 		                <li><i class="fa fa-phone"></i>(310) 478-5855</li>
 		                <li><i class="fa fa-envelope"></i>CenturyCustomCoach@gmail.com</li>
 		            </ul>
-
 		        </div>
 		    </div>
-		</header>
+		</div>
     <div className="header-upper">
 		    <div className="container">
 		        <div style={{display:"block"}}>
@@ -67,7 +66,7 @@ const Header = ({siteTitle}) => (
 		</div>
     <Navbar/>
     <Intro/>
-  </section>
+  </header>
 )
 
 export default Header
