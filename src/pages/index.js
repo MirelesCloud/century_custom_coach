@@ -14,12 +14,12 @@ import '../css/owl.css'
 import Layout from "../components/layout"
 
 const TemplateWrapper = ({data}) => (
-  <div>
+  <section>
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
     <Layout>
     </Layout>
-  </div>
+  </section>
 )
 
 export default TemplateWrapper

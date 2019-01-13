@@ -1,7 +1,27 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import Background from '../images/tires.jpg'
+import Swiper from 'react-id-swiper';
+
+
+import Background from '../images/engine-background.jpg'
+
+
+const params = {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      loops: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    };
+
 
 const Model = () => (
   <div>
@@ -43,7 +63,21 @@ const Model = () => (
               }
             }
           }
-          toyota: file(relativePath: {eq: "images/models/Toyota.png"}) {
+          toyota: file(relativePath: {eq: "images/models/toyota-logo2.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          rollsroyce: file(relativePath: {eq: "images/models/rolls-royce-logo.png"}) {
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
+          bentley: file(relativePath: {eq: "images/models/Bentley5.png"}) {
             childImageSharp {
               fluid(maxWidth: 1080) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -54,29 +88,21 @@ const Model = () => (
       `}
         render={data => (
           <>
-          <section className="model-counter" style={{backgroundImage:`url(${Background})`}}>
-          <div className="container">
-            <div className="row">
-
-                <div className="col-md-2">
-                  <Img fluid={data.audi.childImageSharp.fluid} alt="Audi Logo"/>
-                </div>
-                <div className="col-md-2">
-                  <Img fluid={data.bmw.childImageSharp.fluid} alt="BMW Logo"/>
-                </div>
-                <div className="col-md-2">
-                  <Img fluid={data.ferrari.childImageSharp.fluid} alt="Ferrari Logo"/>
-                </div>
-                <div className="col-md-2">
-                  <Img fluid={data.peugeot.childImageSharp.fluid} alt="Peugeot Logo"/>
-                </div>
-                <div className="col-md-2">
-                  <Img fluid={data.toyota.childImageSharp.fluid} alt="Peugeot Logo"/>
-                </div>
-
+      <section className="models-section" style={{backgroundImage:`url(${Background})`}}>
+        <div className="auto-container">
+            <div className="sponsors-outer">
+                <Swiper {...params}>
+                  <figure className="image-box"><Img fluid={data.audi.childImageSharp.fluid} alt="Audi Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.bmw.childImageSharp.fluid} alt="BMW Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.peugeot.childImageSharp.fluid} alt="Peugeot Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.ferrari.childImageSharp.fluid} alt="Ferrari Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.toyota.childImageSharp.fluid} alt="Toyota Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.rollsroyce.childImageSharp.fluid} alt="Rolls Royce Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.bentley.childImageSharp.fluid} alt="Bentley Logo"/></figure>
+                </Swiper>
             </div>
-          </div>
-      </section>
+        </div>
+    </section>
           </>
         )}
       />

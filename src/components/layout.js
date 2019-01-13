@@ -45,6 +45,9 @@ const Layout = ({children}) => (
               { name: 'keywords', content: 'sample, something' },
             ]}
           >
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+          <link rel="stylesheet" href="owl-carousel/owl.theme.css"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"/>
             <html lang="en" />
           </Helmet>
           <div className="boxed_wrapper">

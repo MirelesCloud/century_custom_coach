@@ -1,10 +1,7 @@
 /***************************************************************************************************************
-||||||||||||||||||||||||||||        stylesheet for Korimon                   |||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
 ||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************
-****************************************************************************************************************
-
+0. Model styles
 1. Imported styles
 2. Global styles
 3. Button style
@@ -38,7 +35,69 @@
 ****************************************************************************************************************
 ||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************/
+/*
+==========================================
+   1. Model styles
+==========================================
+*/
+.models-section{
+	position:relative;
+	padding:40px 0px 40px;
+}
 
+.models-section:before{
+	position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(193,0,0,0.95);
+}
+
+.models-section .sponsors-outer{
+	position:relative;
+}
+
+.models-section .sponsors-outer .owl-dots,
+.models-section .sponsors-outer .owl-nav{
+	position:relative;
+	display:none;
+}
+
+.models-section .sponsors-outer .image-box{
+	position:relative;
+	text-align:center;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+	margin-bottom: 0;
+}
+
+.models-section .sponsors-outer .image-box img{
+	max-width:100%;
+	width:auto;
+	display:inline-block;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
+.models-section .sponsors-outer .image-box img:hover{
+	opacity:0.6;
+}
+
+.auto-container{
+	position:static;
+	max-width:1200px;
+	padding:0px 15px;
+	margin:0 auto;
+}
 /*
 ==========================================
    1. Imported styles
@@ -1399,16 +1458,16 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 
 /*
 =======================================================
-  16. subscribe us
+  16. Last Banner
 =======================================================
 */
 
-.subscribe-us {
+.last-banner {
   background: #c21605;
   padding: 28px 0px;
   color: #fff;
 }
-.subscribe-us h3 {
+.last-banner h3 {
   color: #fff;
   font-size: 40px;
   text-transform: capitalize;
@@ -1418,14 +1477,14 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   letter-spacing: 1px;
 }
 
-.subscribe-us a.thm-btn {
+.last-banner a.thm-btn {
     padding: 0px 20px;
     background: #c21605;
     color: #fff;
     letter-spacing: 1px;
     border: 2px solid #fff;
 }
-.subscribe-us a.thm-btn.inverse:hover {
+.last-banner a.thm-btn.inverse:hover {
   color: #fff;
   background: #c21605;
   border:2px solid #fff;
