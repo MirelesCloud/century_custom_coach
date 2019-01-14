@@ -26,7 +26,7 @@ const Header = ({siteTitle}) => (
 		            <div className="pull-left logo-outer">
 		                <div className="logo-box">
                       <Fade right>
-                        <h1 style={{fontSize:"3.3vw"}}><strong>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h1>
+                        <h1 className="display-4" id="title"><strong>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h1>
                       </Fade>
 		                </div>
 		            </div>

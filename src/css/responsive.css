@@ -25,6 +25,8 @@
 		padding: 0px 0px 0px 63px;
 	}
 
+
+
 }
 
 
@@ -240,6 +242,10 @@
 	.features{
 	  margin-top: -100px;
 	}
+
+#title {
+	font-size: 9vw;
+}
 
 
 }
