@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,21 +13,21 @@ const Feature = () => (
         query FeatureImageQuery {
           feature1: file(relativePath: {eq: "images/f1.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 450) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           feature2: file(relativePath: {eq: "images/f2.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 450) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
           feature3: file(relativePath: {eq: "images/f3.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 450) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -40,7 +41,7 @@ const Feature = () => (
                 <div className="row">
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box">
+                      <figure className="image-box mb-1">
                         <Img fluid={data.feature1.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
@@ -55,8 +56,8 @@ const Feature = () => (
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box">
-                        <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
+                      <figure className="image-box mb-1">
+                        <Img fluid={data.feature2.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
                             <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
@@ -70,7 +71,7 @@ const Feature = () => (
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box">
+                      <figure className="image-box mb-1">
                         <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">

@@ -3139,6 +3139,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 }
 .features .item .image-box{
     position: relative;
+		
 }
 .features .item .image-box .overlay {
     position: absolute;
