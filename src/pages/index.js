@@ -3,11 +3,14 @@ import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
 import { graphql } from 'gatsby'
 
+import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
 import '../css/main.css'
 import '../css/special.css'
 import '../css/contact.css'
 import '../css/responsive.css'
+import '../css/animate.min.css'
 import '../css/owl.css'
 
 

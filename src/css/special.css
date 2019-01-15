@@ -606,7 +606,9 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 
 .header-upper {
   position: relative;
-  padding: 25px 0px 20px;
+	border-bottom: 2px solid #c21605;
+
+  padding: 25px 50px 20px;
   background: #ffffff;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -878,6 +880,24 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
+}
+.test-style {
+	z-index: 1;
+  background: #000;
+	border-bottom: 1px solid #fff;
+  position: fixed;
+
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {top: 500px;}
+  to {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {top: 500px;}
+  to {top: 0px;}
 }
 
 /* Mainmenu fixed style */
@@ -3166,7 +3186,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 }
 .features .item .content h4 a:before{
     color: #222;
-    content: "\f0a9";
+    content: "";
     font-family: "FontAwesome";
     font-size: 16px;
     right: 20px;

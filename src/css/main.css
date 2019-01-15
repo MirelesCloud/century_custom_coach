@@ -18,9 +18,7 @@
   background-color: #000000;
 }
 
-.nav {
-  z-index: 1;
-}
+
 
 .image-filter {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

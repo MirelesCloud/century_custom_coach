@@ -79,7 +79,7 @@ const Feature = () => (
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="https://example.com">Pro Paint Shop</a></h4>
+                        <h4><a href="https://example.com">Quick Service</a></h4>
                       </div>
                     </div>
                   </div>

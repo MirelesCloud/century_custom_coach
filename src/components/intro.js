@@ -35,40 +35,41 @@ const Intro = () => (
       `}
       render={data => (
         <>
-        <div style={{marginTop:"-30px"}}>
-          <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={true} showThumbs={false}>
-            <div >
-               <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
-               <div className="carousel-header-container">
-                 <Fade left>
-                   <h1 className="carousel-header">Full <span style={{color:"#c21605"}}>Service</span> Automotive <span style={{color:"#c21605"}}>Repair</span> and Maintenance</h1>
-                 </Fade>
-               </div>
-
-            </div>
-               <div>
-                  <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
-                    <div className="carousel-header-container">
-                      <Fade right>
-                        <h1 className="carousel-header">Expert <span style={{color:"#c21605"}}>Paint</span>  and <span style={{color:"#c21605"}}>Body</span> Shop</h1>
-                      </Fade>
-
-                    </div>
+        <div className="rev_slider_wrapper">
+          <div className="rev_slider">
+            <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={true} showThumbs={false}>
+              <div >
+                 <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
+                 <div className="carousel-header-container">
+                   <Fade left>
+                     <h1 className="carousel-header">Full <span style={{color:"#c21605"}}>Service</span> Automotive <span style={{color:"#c21605"}}>Repair</span> and Maintenance</h1>
+                   </Fade>
+                 </div>
 
               </div>
-              <div>
-                  <Img fluid={data.auto3.childImageSharp.fluid} alt="header 3"/>
-                    <div className="carousel-header-container">
-                      <Fade left>
-                          <h1 className="carousel-header">We <span style={{color:"#c21605"}}>Service</span>  All Makes and <span style={{color:"#c21605"}}>Models</span> </h1>
-                      </Fade>
+                 <div>
+                    <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
+                      <div className="carousel-header-container">
+                        <Fade right>
+                          <h1 className="carousel-header">Expert <span style={{color:"#c21605"}}>Paint</span>  and <span style={{color:"#c21605"}}>Body</span> Shop</h1>
+                        </Fade>
 
-                    </div>
+                      </div>
 
-              </div>
-          </Carousel>
+                </div>
+                <div>
+                    <Img fluid={data.auto3.childImageSharp.fluid} alt="header 3"/>
+                      <div className="carousel-header-container">
+                        <Fade left>
+                            <h1 className="carousel-header">We <span style={{color:"#c21605"}}>Service</span>  All Makes and <span style={{color:"#c21605"}}>Models</span> </h1>
+                        </Fade>
+
+                      </div>
+
+                </div>
+            </Carousel>
+          </div>
         </div>
-
         </>
       )}
       />
