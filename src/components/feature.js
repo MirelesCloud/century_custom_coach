@@ -41,7 +41,7 @@ const Feature = () => (
                 <div className="row">
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box mb-1">
+                      <figure className="image-box mb-0">
                         <Img fluid={data.feature1.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
@@ -56,7 +56,7 @@ const Feature = () => (
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box mb-1">
+                      <figure className="image-box mb-0">
                         <Img fluid={data.feature2.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
@@ -71,7 +71,7 @@ const Feature = () => (
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="item">
-                      <figure className="image-box mb-1">
+                      <figure className="image-box mb-0">
                         <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">

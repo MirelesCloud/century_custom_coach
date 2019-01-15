@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Swiper from 'react-id-swiper';
 
 
-import Background from '../images/engine-background.jpg'
+import BackgroundImage from '../images/engine-background.jpg'
 
 
 const params = {
@@ -88,7 +88,7 @@ const Model = () => (
       `}
         render={data => (
           <>
-      <section className="models-section" style={{backgroundImage:`url(${Background})`}}>
+      <section className="models-section" style={{backgroundImage:`url(${BackgroundImage})`, border:"1px solid #000"}}>
         <div className="auto-container">
             <div className="sponsors-outer">
                 <Swiper {...params}>

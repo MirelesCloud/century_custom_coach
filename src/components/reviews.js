@@ -1,16 +1,32 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Reviews = () => (
   <div>
     <StaticQuery
       query={graphql`
         query ReviewQuery {
-          auto1: file(relativePath: {eq: "images/home/rawpixel-741689-unsplash.jpg"}) {
+          review1: file(relativePath: {eq: "images/reviews/sharonb.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          },
+          review2: file(relativePath: {eq: "images/reviews/JohnP.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          },
+          review3: file(relativePath: {eq: "images/reviews/KathyS.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -19,28 +35,73 @@ const Reviews = () => (
       `}
         render={data => (
           <>
-
           <section className="testimonial">
-        			<div className="container">
-        				<div className="sec-title">
-        					<h2>Client <span>Feedback</span></h2>
-        				</div>
-        				<div className="row">
-                  <div className="col-md-3 col-sm-6 col-xs-12 ">
-                    <p><span className="yelp-review" data-review-id="B4Zt8J0p8Wd5rkCAAdlVEg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=oU5LKZ9JQ4jaWsXowJhV0A" rel="nofollow noopener">Karen K.</a>s <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?hrid=B4Zt8J0p8Wd5rkCAAdlVEg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/NyJOv0kkySTVMthQAMrTuQ" rel="nofollow noopener">Century Custom Coach</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span></p>
-                  </div>
-                  <div className="col-md-3 col-sm-6 col-xs-12">
-                    <p><span className="yelp-review" data-review-id="ylfeSwu2YlP2C7qLT4rbRQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=FhBqMEBJvaONKu7LFqJgcg" rel="nofollow noopener">John P.</a>s <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?hrid=ylfeSwu2YlP2C7qLT4rbRQ" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/NyJOv0kkySTVMthQAMrTuQ" rel="nofollow noopener">Century Custom Coach</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span></p>
-                  </div>
-                  <div className="col-md-3 col-sm-6 col-xs-12">
-                    <p>	<span className="yelp-review" data-review-id="78uGh1nRpeP9oy70bH5hng" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=HrSYIh46wJ__RBk_dxLljA" rel="nofollow noopener">Kathy S.</a>s <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?hrid=78uGh1nRpeP9oy70bH5hng" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/NyJOv0kkySTVMthQAMrTuQ" rel="nofollow noopener">Century Custom Coach</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span></p>
-                  </div>
-                  <div className="col-md-3 col-sm-6 col-xs-12">
-                    <p>	<span className="yelp-review" data-review-id="rcthcivGR5bPfokHUKXMDw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=yXRsuNN5PevwqFvgC1oK6A" rel="nofollow noopener">Tina V.</a>s <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?hrid=rcthcivGR5bPfokHUKXMDw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/NyJOv0kkySTVMthQAMrTuQ" rel="nofollow noopener">Century Custom Coach</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span></p>
-                  </div>
-        				</div>
-        			</div>
-        		</section>
+			      <div className="container">
+				      <div className="sec-title">
+					      <h2>Client <span>Feedback</span></h2>
+				      </div>
+				      <div className="row">
+                <div className="col-md-4">
+                  <div className="item">
+  						      <div className="image-box">
+                      <Img fluid={data.review1.childImageSharp.fluid} style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
+
+  						      </div>
+  						      <div className="text">
+  							     <h4>Sharon B.</h4>
+  							     <div className="icon">
+                      <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                      <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                      <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                      <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                      <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     </div>
+  							     <p>...This is definitely the place I will be taking my car from this point on. #HappyCustomer </p>
+  						      </div>
+  					      </div>
+                </div>
+		            <div className="col-md-4">
+                  <div className="item">
+  						     <div className="image-box">
+  							    <Img fluid={data.review2.childImageSharp.fluid} style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}} />
+  					      </div>
+  					    	<div className="text">
+  							   <h4>John P.</h4>
+  							   <div className="icon">
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                    </div>
+  							    <p>Absolutely recommend this body shop. Professional and got the work done well and really fast!</p>
+  						     </div>
+  				       	</div>
+                </div>
+					      <div className="col-md-4">
+                  <div className="item">
+    		    				<div className="image-box">
+    							   <Img fluid={data.review3.childImageSharp.fluid}  style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
+    					    	</div>
+    						    <div className="text">
+    							   <h4>Karen S.</h4>
+    							   <div className="icon">
+                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                   </div>
+    							 <p>...Danny and his crew at the shop always do an amazing job. I can't thank them enough. I will always bring my car in here if I ever need a body shop again... </p>
+    						</div>
+    					</div>
+            </div>
+				</div>
+        <div className="sec-title mt-5">
+          <h4>Read more amazing Yelp reviews or leave a comment yourself <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?osq=century+custom+coach" target="_blank" rel="noopener noreferrer">here</a></h4>
+        </div>
+			</div>
+		</section>
           </>
         )}
       />

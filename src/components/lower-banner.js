@@ -35,7 +35,7 @@ const LowerBackground = (props) => (
         <section className="parallax-style padd-1" style={{backgroundImage:`url(${Background})`}}>
 	        <div className="container">
 	            <div className="text-center">
-	                <h2>We are the first and trusted car repair company in your West L.A. The best service is our goal.</h2>
+	                <h2>We are the most trusted car repair company in West L.A. The best service is our goal.</h2>
 	                <div className="text">Some lorem ipsum subtitle will be here ipsum dolor</div>
 	                <a href="contact.html" className="btn-style-five">Contact Us</a>
 	                <a href="https://example.com" className="btn-style-eight">Learn More</a>

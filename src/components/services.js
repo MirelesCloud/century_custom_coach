@@ -1,7 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSprayCan } from '@fortawesome/free-solid-svg-icons'
 
 import Background from '../images/services/bg1.png'
 
@@ -41,13 +39,10 @@ const Services = (props) => (
                 <h2>Our <span>Services</span></h2>
             </div>
       <div className="row">
-
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-repair-mechanism"></i>
-
+              <i className="flaticon-traffic-cone"></i>
             </div>
             <div className="content-box">
               <h3>Engine Replace</h3>
@@ -55,9 +50,7 @@ const Services = (props) => (
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -69,9 +62,7 @@ const Services = (props) => (
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -83,9 +74,7 @@ const Services = (props) => (
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -94,18 +83,14 @@ const Services = (props) => (
             <div className="content-box">
               <h3>Tire Repair</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
               <i className="flaticon-paint-2"></i>
-              <FontAwesomeIcon icon={faSprayCan} className="fa-2x m-2" />
             </div>
             <div className="content-box">
               <h3>Car Paint</h3>
@@ -114,9 +99,7 @@ const Services = (props) => (
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -125,13 +108,10 @@ const Services = (props) => (
             <div className="content-box">
               <h3>Home Service</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -140,13 +120,10 @@ const Services = (props) => (
             <div className="content-box">
               <h3>Engine Repair</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
@@ -155,14 +132,10 @@ const Services = (props) => (
             <div className="content-box">
               <h3>Servicing</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
           </div>
-
         </div>
-
-
       </div>
     </div>
   </section>
@@ -170,7 +143,6 @@ const Services = (props) => (
       )}
     />
   </section>
-
 )
 
 export default Services
