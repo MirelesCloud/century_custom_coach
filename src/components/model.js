@@ -77,7 +77,7 @@ const Model = () => (
               }
             }
           }
-          bentley: file(relativePath: {eq: "images/models/Bentley5.png"}) {
+          chevy: file(relativePath: {eq: "images/models/chevy1.png"}) {
             childImageSharp {
               fluid(maxWidth: 1080) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -98,7 +98,7 @@ const Model = () => (
                   <figure className="image-box"><Img fluid={data.ferrari.childImageSharp.fluid} alt="Ferrari Logo"/></figure>
                   <figure className="image-box"><Img fluid={data.toyota.childImageSharp.fluid} alt="Toyota Logo"/></figure>
                   <figure className="image-box"><Img fluid={data.rollsroyce.childImageSharp.fluid} alt="Rolls Royce Logo"/></figure>
-                  <figure className="image-box"><Img fluid={data.bentley.childImageSharp.fluid} alt="Bentley Logo"/></figure>
+                  <figure className="image-box"><Img fluid={data.chevy.childImageSharp.fluid} alt="Chevy Logo"/></figure>
                 </Swiper>
             </div>
         </div>

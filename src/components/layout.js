@@ -46,7 +46,7 @@ const Layout = ({children}) => (
             ]}
           >
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-          <link rel="stylesheet" href="owl-carousel/owl.theme.css"/>
+          <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"/>
             <html lang="en" />
           </Helmet>

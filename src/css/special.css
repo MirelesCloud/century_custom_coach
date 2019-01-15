@@ -2276,6 +2276,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   margin-left: -50px;
 }
 
+
 .our-projects.style-2 .single-item .inner-box{
   margin-bottom: 30px;
 }
@@ -3139,7 +3140,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 }
 .features .item .image-box{
     position: relative;
-		
+
 }
 .features .item .image-box .overlay {
     position: absolute;

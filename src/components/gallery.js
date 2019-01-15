@@ -10,28 +10,28 @@ const Gallery = () => (
         query GalleryImageQuery {
           gallery1: file(relativePath: {eq: "images/gallery/project1.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
           gallery2: file(relativePath: {eq: "images/gallery/project2.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
           gallery3: file(relativePath: {eq: "images/gallery/project4.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
           gallery4: file(relativePath: {eq: "images/gallery/project3.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -45,8 +45,8 @@ const Gallery = () => (
   	            <h2>Projects <span>Gallery</span></h2>
   	        </div>
 
-              <div className="row">
-                <div className="col-md-3 col-sm-6 col-xs-12">
+              <div className="row" >
+                <div className="col-md-3 col-sm-6 col-xs-12 ">
                   <article className="single-item">
                       <div className="inner-box">
                           <div className="image-box">
@@ -61,9 +61,6 @@ const Gallery = () => (
                       </div>
                   </article>
                 </div>
-
-
-
                 <div className="col-md-3 col-sm-6 col-xs-12">
                   <article className="single-item">
                       <div className="inner-box">
@@ -79,7 +76,6 @@ const Gallery = () => (
                       </div>
                   </article>
                 </div>
-
                   <div className="col-md-3 col-sm-6 col-xs-12">
                     <article className="single-item">
                         <div className="inner-box">
@@ -95,7 +91,6 @@ const Gallery = () => (
                         </div>
                     </article>
                   </div>
-
                   <div className="col-md-3 col-sm-6 col-xs-12">
                     <article className="single-item">
                         <div className="inner-box">

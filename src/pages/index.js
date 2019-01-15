@@ -11,7 +11,7 @@ import '../css/special.css'
 import '../css/contact.css'
 import '../css/responsive.css'
 import '../css/animate.min.css'
-import '../css/owl.css'
+
 
 
 import Layout from "../components/layout"
