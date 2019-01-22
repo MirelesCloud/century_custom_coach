@@ -1,8 +1,6 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
 
-
-import Navbar from './navbar'
 import Intro from './intro'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +9,6 @@ import { faPhoneVolume, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-
 
 const Header = ({siteTitle}) => (
   <section>
-    <Navbar/>
     <div className="header-upper">
 		    <div className="container">
 		        <div className="clearfix">

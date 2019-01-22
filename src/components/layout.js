@@ -2,19 +2,10 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import Feature from './feature'
-import About from './about'
-import Model from './model'
-import Services from './services'
-import LowerBackground from './lower-banner'
-import Gallery from './gallery'
-import Reviews from './reviews'
-import LastBanner from './final-banner'
-import Footer from './footer'
-import MirelesCloud from './mirelescloud'
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from '../utils/typography'
 
-
+import Navbar from './navbar'
 
 const Layout = ({children}) => (
   <div >
@@ -41,8 +32,8 @@ const Layout = ({children}) => (
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Century Custom Coach' },
+              { name: 'keywords', content: 'auto mechanic paint and body' },
             ]}
           >
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -53,20 +44,10 @@ const Layout = ({children}) => (
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"/>
             <html lang="en" />
           </Helmet>
-          <div className="boxed_wrapper">
-            <Header image={data.site.siteMetadata.title}/>
-            <Feature/>
-            <About/>
-            <Model/>
-            <Services/>
-            <LowerBackground/>
-            <Gallery/>
-            <Reviews/>
-            <LastBanner/>
-            <Footer/>
-            <MirelesCloud/>
-          </div>
-
+          <TypographyStyle typography={typography} />
+          <GoogleFont typography={typography} />
+          <Navbar/>
+          <div className="boxed_wrapper">{children}</div>
         </>
       )}
     />

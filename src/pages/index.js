@@ -1,7 +1,7 @@
 import React from "react"
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from '../utils/typography'
 import { graphql } from 'gatsby'
+
+import Home from './template/home'
 
 import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -12,16 +12,9 @@ import '../css/contact.css'
 import '../css/responsive.css'
 import '../css/animate.min.css'
 
-
-
-import Layout from "../components/layout"
-
 const TemplateWrapper = ({data}) => (
   <section>
-    <TypographyStyle typography={typography} />
-    <GoogleFont typography={typography} />
-    <Layout>
-    </Layout>
+    <Home/>
   </section>
 )
 

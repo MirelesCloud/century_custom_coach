@@ -1633,36 +1633,36 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 ===================================================================
 */
 
-.about-seciton {
+.about-section{
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.about-seciton .single-item h2 {margin-top: 10px;}
+.about-section.single-item h2 {margin-top: 10px;}
 
 
 
-.about-seciton .single-item h2 span{
+.about-section.single-item h2 span{
   color: #c21605;
 }
 
-.about-seciton .single-item p {
+.about-section.single-item p {
   color: #848484;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.5px;
   margin: 0;
 }
-.about-seciton .single-item p.style-2{
+.about-section.single-item p.style-2{
   margin-top: 20px;
 }
 
 
-.about-seciton .link_btn{
+.about-section.link_btn{
   margin-top: 30px;
 }
 
-.about-seciton .single-item .image-box{
+.about-section.single-item .image-box{
 }
 
 
