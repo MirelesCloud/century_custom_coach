@@ -36,6 +36,7 @@ module.exports = {
 
   }
  },
+ 
     `gatsby-plugin-typography`,
     {
       resolve: `gatsby-plugin-typography`,
