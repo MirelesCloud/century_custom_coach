@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MirelesCloud Gatsby Starter`,
+        name: `Century Custom Coach`,
         start_url: `/`,
       }
     },
@@ -62,7 +62,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-133007457-1`,
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
