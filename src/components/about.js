@@ -42,7 +42,7 @@ const About = () => (
                          <h2 id="about">About  <span>Century<span style={{color:"#000000"}}>Custom</span>Coach</span></h2>
                          <h3>If It Runs On Gas…We’ll Fix It!</h3>
                      </div>
-                           <p>LOver 30 years experience in all makes and models, foreign and Domestic. We adjust our servicesto meet the needs of our customers</p>
+                           <p>Over 30 years experience in all makes and models, foreign and Domestic. We adjust our servicesto meet the needs of our customers</p>
                            <p className="style-2">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehenderit.</p>
                            <div className="link_btn">
                                <a href="about.html" className="btn-style-one">read more</a>

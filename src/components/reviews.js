@@ -30,6 +30,16 @@ const Reviews = () => (
                 ...GatsbyImageSharpFluid
               }
             }
+          },
+          yelp {
+            reviews(business: "century-custom-coach-los-angeles") {
+              review {
+                id:
+
+                rating
+                text
+              }
+            }
           }
         }
       `}
@@ -48,7 +58,7 @@ const Reviews = () => (
 
   						      </div>
   						      <div className="text">
-  							     <h4>Sharon B.</h4>
+  							     <h4>Name</h4>
   							     <div className="icon">
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
@@ -56,7 +66,7 @@ const Reviews = () => (
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                      </div>
-  							     <p>...This is definitely the place I will be taking my car from this point on. #HappyCustomer </p>
+  							     <p>{data.reviews}</p>
   						      </div>
   					      </div>
                 </div>

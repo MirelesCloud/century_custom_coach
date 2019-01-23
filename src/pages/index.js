@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from 'gatsby'
 
 import Home from './template/home'
+import SEO from '../components/SEO'
 
 import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -14,6 +15,7 @@ import '../css/animate.min.css'
 
 const TemplateWrapper = ({data}) => (
   <section>
+    <SEO/>
     <Home/>
   </section>
 )
