@@ -31,16 +31,7 @@ const Reviews = () => (
               }
             }
           },
-          yelp {
-            reviews(business: "century-custom-coach-los-angeles") {
-              review {
-                id:
 
-                rating
-                text
-              }
-            }
-          }
         }
       `}
         render={data => (
@@ -66,7 +57,7 @@ const Reviews = () => (
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                      </div>
-  							     <p>{data.reviews}</p>
+  							     <p>Review</p>
   						      </div>
   					      </div>
                 </div>

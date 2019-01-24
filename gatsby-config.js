@@ -42,17 +42,7 @@ module.exports = {
 
   }
  },
- {
-   resolve: `gatsby-source-graphql`,
-   options: {
-     typeName: `YELP`,
-     fieldName: `yelp`,
-     url: `https://api.yelp.com/v3/graphql`,
-     headers: {
-       Authorization: `bearer ${process.env.API_KEY}`
-     },
-   }
- },
+ 
     `gatsby-plugin-typography`,
     {
       resolve: `gatsby-plugin-typography`,
