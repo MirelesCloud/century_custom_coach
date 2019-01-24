@@ -1,36 +1,15 @@
 import React from 'react';
 
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+const Test = () => (
+ <div className="row">
+   <div className="container text-center">
 
-const Section= () => (
- <div>
-   <AnchorLink href='#things'>Things</AnchorLink>
-   <AnchorLink href='#stuff'>Stuff</AnchorLink>
-   <div className="container">
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
-     <h1>x</h1>
+     <i className="flaticon-traffic-cone" style={{color:"green"}}></i>
+     <h1>Hello</h1>
+     <span className="flaticon-tire"></span>
    </div>
 
-   <section id='things'>
-     <h2>Things</h2>
-   </section>
-   <section id='stuff'>
-     <h2>Stuff</h2>
-   </section>
  </div>
 )
 
-export default Section
+export default Test

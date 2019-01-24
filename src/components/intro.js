@@ -63,10 +63,9 @@ const Intro = () => (
                         <Fade left>
                             <h1 className="carousel-header">We <span style={{color:"#c21605"}}>Service</span>  All Makes and <span style={{color:"#c21605"}}>Models</span> </h1>
                         </Fade>
-
                       </div>
-
                 </div>
+
             </Carousel>
           </div>
         </div>
