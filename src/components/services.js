@@ -8,7 +8,7 @@ const Services = (props) => (
     <StaticQuery
       query={graphql`
         query ServiceQuery {
-          imageHair1: file(relativePath: {eq: "images/home/hair5.jpg"}) {
+          trafficCone: file(relativePath: {eq: "images/icons/001-traffic-cone.png"}) {
             childImageSharp {
               fluid(maxWidth: 400) {
                 ...GatsbyImageSharpFluid
@@ -42,7 +42,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-traffic-cone"></i>
+              <i className="flaticon-007-engine"></i>
             </div>
             <div className="content-box">
               <h3>Engine Replace</h3>
@@ -54,7 +54,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-car-washing-machine"></i>
+              <i className="flaticon-023-car-wash"></i>
             </div>
             <div className="content-box">
               <h3>Car Wash</h3>
@@ -66,7 +66,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-transport"></i>
+              <i className="flaticon-005-voltmeter"></i>
             </div>
             <div className="content-box">
               <h3>Car Observation</h3>
@@ -78,7 +78,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-car-wheel"></i>
+              <i className="flaticon-001-tire-1"></i>
             </div>
             <div className="content-box">
               <h3>Tire Repair</h3>
@@ -90,7 +90,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-paint-2"></i>
+              <i className="flaticon-031-airbrush"></i>
             </div>
             <div className="content-box">
               <h3>Car Paint</h3>
@@ -103,10 +103,10 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-man-with-car"></i>
+              <i className="flaticon-017-car-2"></i>
             </div>
             <div className="content-box">
-              <h3>Home Service</h3>
+              <h3>Body Shop</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
               <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
             </div>
@@ -115,7 +115,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-malfunction-indicador"></i>
+              <i className="flaticon-014-piston"></i>
             </div>
             <div className="content-box">
               <h3>Engine Repair</h3>
@@ -127,7 +127,7 @@ const Services = (props) => (
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
             <div className="icon-box">
-              <i className="flaticon-car-with-wrench"></i>
+              <i className="flaticon-021-oil"></i>
             </div>
             <div className="content-box">
               <h3>Servicing</h3>

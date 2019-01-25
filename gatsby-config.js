@@ -10,6 +10,7 @@ module.exports = {
     description: `Automotive mechanic, repair, paint and body shop`,
     image: `/src/images/Danny.jpg`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -42,7 +43,6 @@ module.exports = {
 
   }
  },
- 
     `gatsby-plugin-typography`,
     {
       resolve: `gatsby-plugin-typography`,
