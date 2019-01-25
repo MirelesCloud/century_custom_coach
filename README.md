@@ -1,4 +1,4 @@
-# MirelesCloud Gatsby Starter
+# Century Custom Coach - centurycustomcoach.com
 ### Gatsby v2
 
 ## Running in development
