@@ -5,11 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
 
-import Navbar from './navbar'
 
 
 const Layout = ({children}) => (
-  <div >
     <StaticQuery
       query={graphql`
     query SiteTitleQuery {
@@ -48,13 +46,11 @@ const Layout = ({children}) => (
 
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
-          <Navbar/>
           <div className="boxed_wrapper">{children}</div>
 
         </>
       )}
     />
-  </div>
 )
 
 export default Layout

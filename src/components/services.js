@@ -1,5 +1,8 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
+
+
+import '../font/flaticon.css'
 
 import Background from '../images/services/bg1.png'
 
@@ -47,7 +50,7 @@ const Services = (props) => (
             <div className="content-box">
               <h3>Engine Replace</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+              <Link to="/engine-replace/">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>

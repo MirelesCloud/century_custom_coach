@@ -72,6 +72,7 @@ const Intro = () => (
         </>
       )}
       />
+
   </section>
 )
 

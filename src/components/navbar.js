@@ -19,12 +19,15 @@ const Navbar = () => (
           <li className="nav-item">
             <a className="nav-link" href="https://example.com">Gallery</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="https://example.com">Testimonials</a>
+          </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="https://example.com" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="https://example.com">Action</a>
+              <a className="dropdown-item" href="https://example.com">Engine Replace</a>
               <a className="dropdown-item" href="https://example.com">Another action</a>
               <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="https://example.com">Something else here</a>
