@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import '../font/flaticon.css'
 import Navbar from  './navbar'
 
-const Header = ({siteTitle}) => (
+const HeaderTemplate = ({siteTitle}) => (
   <section>
     <Navbar/>
     <div className="header-upper">
@@ -45,6 +45,12 @@ const Header = ({siteTitle}) => (
 		    </div>
 		</div>
   </section>
+)
+
+const Header = () => (
+  <div className="boxed_wrapper">
+    <HeaderTemplate/>
+  </div>
 )
 
 export default Header

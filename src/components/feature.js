@@ -1,10 +1,9 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+
 
 const Feature = () => (
   <div>
@@ -92,7 +91,7 @@ const Feature = () => (
         )}
       />
   </div>
-
 )
+
 
 export default Feature

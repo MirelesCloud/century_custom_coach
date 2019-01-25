@@ -3,10 +3,11 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
 
-const Intro = () => (
-  <section>
+import Feature from './feature'
+
+const IntroTemplate = () => (
     <StaticQuery
       query={graphql`
         query ImageQuery {
@@ -55,7 +56,6 @@ const Intro = () => (
                         </Fade>
 
                       </div>
-
                 </div>
                 <div>
                     <Img fluid={data.auto3.childImageSharp.fluid} alt="header 3"/>
@@ -65,15 +65,19 @@ const Intro = () => (
                         </Fade>
                       </div>
                 </div>
-
             </Carousel>
           </div>
         </div>
         </>
       )}
       />
+)
 
-  </section>
+const Intro = () => (
+  <div>
+    <IntroTemplate/>
+    <Feature/>
+  </div>
 )
 
 export default Intro

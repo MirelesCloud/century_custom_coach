@@ -1,9 +1,10 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import Background from '../images/image-1.png'
 
-const About = () => (
+import Model from './model'
+
+const AboutTemplate = () => (
   <div>
     <StaticQuery
       query={graphql`
@@ -11,7 +12,7 @@ const About = () => (
           background: file(relativePath: {eq: "images/image-1.png"}) {
             childImageSharp {
               fluid(maxWidth: 1080) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
@@ -26,7 +27,8 @@ const About = () => (
       `}
         render={data => (
           <>
-          <section className="about-section padd-2" style={{backgroundImage:`url(${Background})`}}>
+          <section className="about-section padd-2" style={{
+                  backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
            <div className="container">
                <div className="row">
                  <div className="col-md-6 col-sm-12 col-xs-12">
@@ -56,7 +58,13 @@ const About = () => (
         )}
       />
   </div>
+)
 
+const About = () => (
+  <div>
+    <AboutTemplate/>
+    <Model/>
+  </div>
 )
 
 export default About

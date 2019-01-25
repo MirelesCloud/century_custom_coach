@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
 const Gallery = () => (
-  <div>
     <StaticQuery
       query={graphql`
         query GalleryImageQuery {
@@ -114,8 +113,6 @@ const Gallery = () => (
           </>
         )}
       />
-  </div>
 )
-
 
 export default Gallery

@@ -1,38 +1,25 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Background from '../images/lower-banner/bg-1.jpg'
 
-const LowerBackground = (props) => (
+const LowerBackground = () => (
   <section id='services'>
     <StaticQuery
       query={graphql`
         query LowerBannerImageQuery {
-          imageHair1: file(relativePath: {eq: "images/home/hair5.jpg"}) {
+          background: file(relativePath: {eq: "images/lower-banner/bg-1.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 400) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
-          imageHair2: file(relativePath: {eq: "images/home/hair3.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageHair3: file(relativePath: {eq: "images/home/hair4.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+
         }
       `}
       render={data => (
         <>
-        <section className="parallax-style padd-1" style={{backgroundImage:`url(${Background})`}}>
+        <section className="parallax-style padd-1" style={{
+                backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
 	        <div className="container">
 	            <div className="text-center">
 	                <h2>We are the most trusted car repair company in West L.A. The best service is our goal.</h2>
@@ -46,7 +33,6 @@ const LowerBackground = (props) => (
       )}
     />
   </section>
-
 )
 
 export default LowerBackground

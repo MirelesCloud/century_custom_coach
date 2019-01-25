@@ -1,31 +1,16 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 
-
 import '../font/flaticon.css'
 
-import Background from '../images/services/bg1.png'
+import LowerBackground from './lower-banner'
 
-const Services = (props) => (
+const ServicesTemplate = (props) => (
   <section id='services'>
     <StaticQuery
       query={graphql`
         query ServiceQuery {
-          trafficCone: file(relativePath: {eq: "images/icons/001-traffic-cone.png"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageHair2: file(relativePath: {eq: "images/home/hair3.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageHair3: file(relativePath: {eq: "images/home/hair4.jpg"}) {
+          background: file(relativePath: {eq: "images/services/bg1.png"}) {
             childImageSharp {
               fluid(maxWidth: 400) {
                 ...GatsbyImageSharpFluid
@@ -36,7 +21,8 @@ const Services = (props) => (
       `}
       render={data => (
         <>
-        <section className="our-services padd-1" style={{backgroundImage:`url(${Background})`}}>
+        <section className="our-services padd-1" style={{
+                backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
     <div className="container">
       <div className="sec-title text-center">
                 <h2>Our <span>Services</span></h2>
@@ -146,6 +132,13 @@ const Services = (props) => (
       )}
     />
   </section>
+)
+
+const Services = () => (
+  <div>
+    <ServicesTemplate/>
+    <LowerBackground/>
+  </div>
 )
 
 export default Services

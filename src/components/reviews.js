@@ -5,8 +5,7 @@ import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-const Reviews = () => (
-  <div>
+const ReviewsTemplate = () => (
     <StaticQuery
       query={graphql`
         query ReviewQuery {
@@ -46,7 +45,6 @@ const Reviews = () => (
                   <div className="item">
   						      <div className="image-box">
                       <Img fluid={data.review1.childImageSharp.fluid} style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
-
   						      </div>
   						      <div className="text">
   							     <h4>Name</h4>
@@ -106,8 +104,12 @@ const Reviews = () => (
           </>
         )}
       />
-  </div>
+)
 
+const Reviews = () => (
+  <div>
+    <ReviewsTemplate/>
+  </div>
 )
 
 export default Reviews

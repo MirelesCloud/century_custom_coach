@@ -2,10 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import Header from '../components/header'
 import Layout from '../components/layout'
-import Footer from '../components/footer'
-
 
 const EngineReplaceTemplate = () => (
   <StaticQuery
@@ -36,7 +33,6 @@ const EngineReplaceTemplate = () => (
     `}
     render={data => (
       <>
-      <Header/>
       <section className="page-banner" style={{
               backgroundImage: `url(${data.banner.childImageSharp.fluid.src})`}}
               >
@@ -80,7 +76,6 @@ const EngineReplaceTemplate = () => (
           </div>
         </div>
       </section>
-      <Footer/>
       </>
     )}
     />
