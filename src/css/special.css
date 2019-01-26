@@ -1103,29 +1103,30 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 .page-banner .content span{
   color: #fff;
 }
-.page-banner .breadcrumb{
-      margin-top: 14px;
+
+.page-banner .breadcumb{
+  margin-top: 14px;
 }
-.page-banner .breadcrumb li{
+.page-banner .breadcumb li{
   display: inline-block;
   margin-right: 5px;
   z-index: 1;
   position: relative;
 }
-.page-banner .breadcrumb li a{
-      font-size: 16px;
+.page-banner .breadcumb li a{
+      font-size: 18px;
       font-weight: 500;
       color: #fff;
 }
-.page-banner .breadcrumb li a:hover{
+.page-banner .breadcumb li a:hover{
     color: #c21605;
     transition: .5s;
 }
-.page-banner .breadcrumb i{
+.page-banner .breadcumb i{
   margin-left: 6px;
   font-size: 12px;
 }
-.page-banner .breadcrumb .active{
+.page-banner .breadcumb .active{
   color: #fff;
 }
 

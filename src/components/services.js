@@ -36,7 +36,7 @@ const ServicesTemplate = (props) => (
             <div className="content-box">
               <h3>Engine Replace</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <Link to="/engine-replace/">details <i className="fa fa-caret-right"></i></Link>
+              <Link to="/pages/engine-replace/">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ const ServicesTemplate = (props) => (
             <div className="content-box">
               <h3>Body Shop</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+              <Link to="/pages/body-shop/">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>

@@ -6,10 +6,7 @@ exports.createPages = ({ actions, graphql }) => {
   const servicePageTemplate = path.resolve(`src/templates/serviceTemplate.js`)
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date]}
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
             frontmatter {
