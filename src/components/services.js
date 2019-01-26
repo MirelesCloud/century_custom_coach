@@ -36,7 +36,7 @@ const ServicesTemplate = (props) => (
             <div className="content-box">
               <h3>Engine Replace</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <Link to="/pages/engine-replace/">details <i className="fa fa-caret-right"></i></Link>
+              <Link to="/engine-replace/">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const ServicesTemplate = (props) => (
             <div className="content-box">
               <h3>Car Wash</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+              <Link to="/car-wash">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -58,9 +58,9 @@ const ServicesTemplate = (props) => (
               <i className="flaticon-005-voltmeter"></i>
             </div>
             <div className="content-box">
-              <h3>Car Observation</h3>
+              <h3>Oil Change</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+              <Link to="/oil-change">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -70,9 +70,9 @@ const ServicesTemplate = (props) => (
               <i className="flaticon-001-tire-1"></i>
             </div>
             <div className="content-box">
-              <h3>Tire Repair</h3>
+              <h3>AC Service</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+              <Link to="/ac-service">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -82,10 +82,10 @@ const ServicesTemplate = (props) => (
               <i className="flaticon-031-airbrush"></i>
             </div>
             <div className="content-box">
-              <h3>Car Paint</h3>
+              <h3>Auto Paint</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
 
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+               <Link to="/auto-paint"> details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ const ServicesTemplate = (props) => (
             <div className="content-box">
               <h3>Body Shop</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <Link to="/pages/body-shop/">details <i className="fa fa-caret-right"></i></Link>
+              <Link to="/body-shop/">details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -107,9 +107,9 @@ const ServicesTemplate = (props) => (
               <i className="flaticon-014-piston"></i>
             </div>
             <div className="content-box">
-              <h3>Engine Repair</h3>
+              <h3>Electronics Repair</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+               <Link to="/electronics-repair"> details <i className="fa fa-caret-right"></i></Link>
             </div>
           </div>
         </div>
@@ -119,9 +119,10 @@ const ServicesTemplate = (props) => (
               <i className="flaticon-021-oil"></i>
             </div>
             <div className="content-box">
-              <h3>Servicing</h3>
+              <h3>Diagnostics</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-              <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
+                <Link to="/diagnostics"> details <i className="fa fa-caret-right"></i></Link>
+
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 ---
-path: "/body-shop"
-title: "Body Shop"
+path: "/auto-paint"
+title: "Auto Paint"
 image: "../images/engine.jpg"
-sub-title: "Auto Body and Collision Repair"
+sub-title: "Auto Paint and Polish"
 description: "Whether you are going through an insurance company or paying out of pocket, we will go the extra mile in providing you with friendly experienced office staff, fast and convenient service, with guaranteed quality vehicle repairs. We will restore your car, truck, van, or SUV to pre-accident condition as fast as possible and get you back on the road."
 heading: "Car Observation"
 showcase: "../images/ss.jpg"

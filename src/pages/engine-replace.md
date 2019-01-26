@@ -1,5 +1,5 @@
 ---
-path: "/pages/engine-replace"
+path: "/engine-replace"
 title: "Engine Replace"
 image: "../images/engine.jpg"
 sub-title: "Engine Rebuild and Replace"
