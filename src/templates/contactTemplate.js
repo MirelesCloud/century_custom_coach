@@ -103,10 +103,6 @@ export default function Contact({ data }) {
                </div>
            </div>
        </section>
-
-
-
-
     </Layout>
   )
 }

@@ -8,7 +8,9 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      services: allMarkdownRemark {
+      services: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/services/*.md"}}
+      ) {
         edges {
           node {
             frontmatter {
@@ -18,7 +20,9 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
 
-      contact: allMarkdownRemark {
+      contact: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/contact/*.md"}}
+      ) {
         edges {
           node {
             frontmatter
