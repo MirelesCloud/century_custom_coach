@@ -2,8 +2,6 @@
 path: "/contact"
 title: "Contact"
 image: "../images/engine.jpg"
-sub-title: "Let us know how we can help"
-description: "more contact"
 heading: "Contact"
 street: "2237 Barry Ave"
 city: "Los Angeles, CA 90064"
