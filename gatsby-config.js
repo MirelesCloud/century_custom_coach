@@ -36,8 +36,6 @@ module.exports = {
 
    }
   },
-
-
   {
  resolve: `gatsby-source-filesystem`,
  options: {
