@@ -2,9 +2,21 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 import Layout from '../components/layout'
 
+const StoreLocation = withScriptjs(withGoogleMap(() => {
+  return (
+      <GoogleMap
+        defaultZoom={15}
+        center={ { lat:  33.838063, lng: -118.361041 } }
+      >
+        <Marker position={ { lat:  33.838063, lng: -118.361041 } }/>
+      </GoogleMap>
+    );
+  }
+))
 
 export default function Contact({ data }) {
 
@@ -69,22 +81,22 @@ export default function Contact({ data }) {
                            <div className="col-md-6 col-sm-6 col-xs-12">
 
                                <div className="form-group style-two">
-                                   <input type="text" name="form_name" className="form-control" value="" placeholder="Your Name" required=""/>
+                                   <input type="text" name="form_name" className="form-control"  placeholder="Your Name" required=""/>
                                </div>
                            </div>
                            <div className="col-md-6 col-sm-6 col-xs-12">
                                <div className="form-group style-two">
-                                   <input type="email" name="form_email" className="form-control required email" value="" placeholder="Your Email" required=""/>
+                                   <input type="email" name="form_email" className="form-control required email"  placeholder="Your Email" required=""/>
                                </div>
                            </div>
                            <div className="col-md-6 col-sm-6 col-xs-12">
                                <div className="form-group style-two">
-                                   <input type="text" name="form_phone" className="form-control" value="" placeholder="Phone"/>
+                                   <input type="text" name="form_phone" className="form-control"  placeholder="Phone"/>
                                </div>
                            </div>
                            <div className="col-md-6 col-sm-6 col-xs-12">
                                <div className="form-group">
-                                   <input type="text" name="form_subject" className="form-control" value="" placeholder="Subject"/>
+                                   <input type="text" name="form_subject" className="form-control"  placeholder="Subject"/>
                                </div>
                            </div>
                            <div className="col-md-12 col-sm-12 col-xs-12">
@@ -95,7 +107,7 @@ export default function Contact({ data }) {
                        </div>
                        <div className="contact-section-btn text-center">
                            <div className="form-group style-two">
-                               <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value=""/>
+                               <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" />
                                <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
                            </div>
                        </div>
@@ -103,6 +115,16 @@ export default function Contact({ data }) {
                </div>
            </div>
        </section>
+       <section className="contact_details sec-padd">
+        <div className="home-google-map">
+          <StoreLocation
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDhq6DDmH0nylqeC3vifVoSyWrUmRFj_7U&v=3.exp&libraries=geometry,drawing,places`}
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `350px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
+        </section>
     </Layout>
   )
 }
