@@ -5,6 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 import Layout from '../components/layout'
+import ContactForm from '../components/contact'
 
 const StoreLocation = withScriptjs(withGoogleMap(() => {
   return (
@@ -76,42 +77,7 @@ export default function Contact({ data }) {
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
                </div>
                <div className="default-form-area">
-                   <form id="contact-form" name="contact_form" className="default-form" action="sendmail.php" method="post">
-                       <div className="row clearfix">
-                           <div className="col-md-6 col-sm-6 col-xs-12">
-
-                               <div className="form-group style-two">
-                                   <input type="text" name="form_name" className="form-control"  placeholder="Your Name" required=""/>
-                               </div>
-                           </div>
-                           <div className="col-md-6 col-sm-6 col-xs-12">
-                               <div className="form-group style-two">
-                                   <input type="email" name="form_email" className="form-control required email"  placeholder="Your Email" required=""/>
-                               </div>
-                           </div>
-                           <div className="col-md-6 col-sm-6 col-xs-12">
-                               <div className="form-group style-two">
-                                   <input type="text" name="form_phone" className="form-control"  placeholder="Phone"/>
-                               </div>
-                           </div>
-                           <div className="col-md-6 col-sm-6 col-xs-12">
-                               <div className="form-group">
-                                   <input type="text" name="form_subject" className="form-control"  placeholder="Subject"/>
-                               </div>
-                           </div>
-                           <div className="col-md-12 col-sm-12 col-xs-12">
-                               <div className="form-group style-two">
-                                   <textarea name="form_message" className="form-control textarea required" placeholder="Message"></textarea>
-                               </div>
-                           </div>
-                       </div>
-                       <div className="contact-section-btn text-center">
-                           <div className="form-group style-two">
-                               <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" />
-                               <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
-                           </div>
-                       </div>
-                   </form>
+                  <ContactForm/>
                </div>
            </div>
        </section>

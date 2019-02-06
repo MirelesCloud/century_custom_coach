@@ -1,87 +1,69 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faPinterestSquare, faInstagram, } from '@fortawesome/free-brands-svg-icons'
 
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-
-
-
-const StoreLocation = withScriptjs(withGoogleMap(() => {
-  return (
-      <GoogleMap
-        defaultZoom={15}
-        center={ { lat:  33.838063, lng: -118.361041 } }
-      >
-        <Marker position={ { lat:  33.838063, lng: -118.361041 } }/>
-      </GoogleMap>
-    );
+class ContactForm extends React.Component {
+  state = {
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   }
-))
 
+  handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
 
+    this.setState({
+      [name]: value,
+    })
+  }
 
-class StoreMap extends React.Component {
+  handleSubmit = event => {
+    event.preventDefault()
+    alert(`Welcome ${this.state.name}!`)
+  }
   render() {
     return (
-        <div className="container-fluid standard-border">
-          <div className="row mt-5 ">
-            <div className="col-sm ">
-              <h3 className="text-center header-style">Contact</h3>
-              <hr className="ml-5 pl-5 pr-5 mr-5"/>
-              <h4 className="text-center text-gray pr-5 pl-5">4425 Torrance Blvd, Torrance, CA 90503 - (510) 684-0425</h4>
-              <div className="mx-auto" style={{width: 200}}>
-                <FontAwesomeIcon icon={faEnvelope} className="fa-2x m-2" />
-                <FontAwesomeIcon icon={faFacebook} className="fa-2x m-2"/>
-                <FontAwesomeIcon icon={faPinterestSquare} className="fa-2x m-2"/>
-                <FontAwesomeIcon icon={faInstagram} className="fa-2x m-2"/>
-              </div>
-            </div>
-          </div>
-          <div className="row mb-3" id='contact'>
-            <div className="col-md">
-              <div className="map-box">
-                <div className="map-box-inside">
-                  <div className="gm-style">
-                    <div className="google-map">
-                      <StoreLocation
-                        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDhq6DDmH0nylqeC3vifVoSyWrUmRFj_7U&v=3.exp&libraries=geometry,drawing,places`}
-                        loadingElement={<div style={{ height: `100%` }} />}
-                        containerElement={<div style={{ height: `350px` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
-                      />
-                    </div>
+        <form id="contact-form" name="contact_form" className="default-form" onSubmit={this.handleSubmit} >
+          <div className="row clearfix">
+              <div className="col-md-6 col-sm-6 col-xs-12">
+
+                  <div className="form-group style-two">
+                      <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} className="form-control"  placeholder="Your Name" required=""/>
                   </div>
-                </div>
               </div>
-            </div>
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                  <div className="form-group style-two">
+                      <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} className="form-control required email"  placeholder="Your Email" required=""/>
+                  </div>
+              </div>
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                  <div className="form-group style-two">
+                      <input type="text" name="phone" value={this.state.phone} onChange={this.handleInputChange} className="form-control"  placeholder="Phone"/>
+                  </div>
+              </div>
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                  <div className="form-group">
+                      <input type="text" name="subject" value={this.state.subject} onChange={this.handleInputChange} className="form-control"  placeholder="Subject"/>
+                  </div>
+              </div>
+              <div className="col-md-12 col-sm-12 col-xs-12">
+                  <div className="form-group style-two">
+                      <textarea name="message" value={this.state.message} onChange={this.handleInputChange} className="form-control textarea required" placeholder="Message"></textarea>
+                  </div>
+              </div>
           </div>
-        </div>
+          <div className="contact-section-btn text-center">
+              <div className="form-group style-two">
+                  <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" />
+                  <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
+              </div>
+          </div>
+        </form>
     )
   }
 }
 
 
-/*
-const Contact = () => (
-  <div className="container-fluid standard-border">
-    <div className="row p-5">
-      <div className="col-md">
-        <div className="map-box">
-          <div className="map-box-inside">
-            <div className="gm-style">
-              <div className="google-map">
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-)
-*/
-export default StoreMap
+export default ContactForm
