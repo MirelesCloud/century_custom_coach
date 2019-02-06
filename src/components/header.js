@@ -2,7 +2,9 @@ import React from "react"
 import Fade from 'react-reveal/Fade'
 import { Link } from 'gatsby'
 
-import '../font/flaticon.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneVolume, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+
 import Navbar from  './navbar'
 
 const HeaderTemplate = ({siteTitle}) => (
@@ -20,21 +22,21 @@ const HeaderTemplate = ({siteTitle}) => (
 		            </div>
 		            <div className="pull-right upper-right clearfix" >
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-phone"></span></div>
+		                    <div className="icon-box"><span><FontAwesomeIcon icon={faPhoneVolume} className="fa-2x m-2" /></span></div>
 		                    <ul className="list-unstyled" id="header-upper">
 		                        <li><strong>Call Us</strong></li>
 		                        <li id="header-upper">(310) 478-5855</li>
 		                    </ul>
 		                </div>
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-pin"></span></div>
+		                    <div className="icon-box"><span><FontAwesomeIcon icon={faMapMarkerAlt} className="fa-2x m-2" /></span></div>
 		                    <ul className="list-unstyled">
 		                        <li><strong>Our Address</strong></li>
 		                        <li id="header-upper">2237 Barry Ave, Los Angeles, CA 90064</li>
 		                    </ul>
 		                </div>
 		                <div className="upper-column info-box">
-		                    <div className="icon-box"><span className="flaticon-clock"></span></div>
+		                    <div className="icon-box"><span><FontAwesomeIcon icon={faClock} className="fa-2x m-2" /></span></div>
 		                    <ul className="list-unstyled">
 		                        <li><strong>Working Hour</strong></li>
 		                        <li id="header-upper">Mon- Fri : 8 am - 6 pm</li>
