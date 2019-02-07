@@ -1,69 +1,68 @@
 import React from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-class ContactForm extends React.Component {
-  state = {
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  }
-
-  handleInputChange = event => {
-    const target = event.target
-    const value = target.value
-    const name = target.name
-
-    this.setState({
-      [name]: value,
-    })
-  }
-
-  handleSubmit = event => {
-    event.preventDefault()
-    alert(`Welcome ${this.state.name}!`)
-  }
-  render() {
-    return (
-        <form id="contact-form" name="contact_form" className="default-form" onSubmit={this.handleSubmit} >
+const ContactForm = () => (
+    <Formik
+      initialValues={{name:'', email:'', phone:'', subject:'', message:''}}
+      validate={values => {
+        let errors = {};
+        if (!values.email) {
+          errors.email = 'Required';
+        } else if (
+          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+        ) {
+          errors.email = 'Invalid email address';
+        }
+        return errors;
+      }}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+      >
+      {({ isSubmitting }) => (
+        <Form className="default-form" name="contact_form" >
           <div className="row clearfix">
-              <div className="col-md-6 col-sm-6 col-xs-12">
-
-                  <div className="form-group style-two">
-                      <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} className="form-control"  placeholder="Your Name" required=""/>
-                  </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <Field className="form-control" type="text" name="name" placeholder="Your Name" />
               </div>
               <div className="col-md-6 col-sm-6 col-xs-12">
-                  <div className="form-group style-two">
-                      <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} className="form-control required email"  placeholder="Your Email" required=""/>
-                  </div>
+                <div className="form-group style-two">
+                    <Field type="email" name="email" className="form-control required email"  placeholder="Your Email" required=""/>
+                    <ErrorMessage name="email" component="div" />
+                </div>
               </div>
               <div className="col-md-6 col-sm-6 col-xs-12">
-                  <div className="form-group style-two">
-                      <input type="text" name="phone" value={this.state.phone} onChange={this.handleInputChange} className="form-control"  placeholder="Phone"/>
-                  </div>
+                <div className="form-group style-two">
+                  <Field type="text" name="phone"  className="form-control"  placeholder="Phone"/>
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-6 col-xs-12">
+                <div className="form-group">
+                    <Field type="text" name="subject"className="form-control"  placeholder="Subject"/>
+                </div>
               </div>
               <div className="col-md-6 col-sm-6 col-xs-12">
                   <div className="form-group">
-                      <input type="text" name="subject" value={this.state.subject} onChange={this.handleInputChange} className="form-control"  placeholder="Subject"/>
+                      <Field type="text" name="subject"  className="form-control"  placeholder="Subject"/>
                   </div>
               </div>
               <div className="col-md-12 col-sm-12 col-xs-12">
                   <div className="form-group style-two">
-                      <textarea name="message" value={this.state.message} onChange={this.handleInputChange} className="form-control textarea required" placeholder="Message"></textarea>
+                      <textarea name="message" className="form-control textarea required" placeholder="Message"></textarea>
                   </div>
               </div>
+            </div>
           </div>
-          <div className="contact-section-btn text-center">
-              <div className="form-group style-two">
-                  <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" />
-                  <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
-              </div>
-          </div>
-        </form>
-    )
-  }
-}
-
+          <button className="btn-style-five" type="submit" disabled={isSubmitting}>
+            Submit
+          </button>
+        </Form>
+      )}
+    </Formik>
+)
 
 export default ContactForm

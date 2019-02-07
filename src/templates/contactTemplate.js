@@ -11,9 +11,9 @@ const StoreLocation = withScriptjs(withGoogleMap(() => {
   return (
       <GoogleMap
         defaultZoom={15}
-        center={ { lat:  33.838063, lng: -118.361041 } }
+        center={ { lat:  34.034181, lng:  -118.44647 } }
       >
-        <Marker position={ { lat:  33.838063, lng: -118.361041 } }/>
+        <Marker position={ { lat:  34.034181, lng:  -118.44647 } }/>
       </GoogleMap>
     );
   }
@@ -84,7 +84,7 @@ export default function Contact({ data }) {
        <section className="contact_details sec-padd">
         <div className="home-google-map">
           <StoreLocation
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDhq6DDmH0nylqeC3vifVoSyWrUmRFj_7U&v=3.exp&libraries=geometry,drawing,places`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCqp5IIpnk5kvH5uJ_cTeDbegyVqWn5Dos&v=3.exp&libraries=geometry,drawing,places`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `350px` }} />}
             mapElement={<div style={{ height: `100%` }} />}

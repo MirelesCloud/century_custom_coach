@@ -5,6 +5,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const servicePageTemplate = path.resolve(`src/templates/serviceTemplate.js`)
   const contactPageTemplate = path.resolve(`src/templates/contactTemplate.js`)
+  const galleryPageTemplate = path.resolve(`src/templates/galleryTemplate.js`)
 
   return graphql(`
     {
@@ -22,6 +23,19 @@ exports.createPages = ({ actions, graphql }) => {
 
       contact: allMarkdownRemark(
         filter: {fileAbsolutePath: { glob: "**/src/pages/contact/*.md"}}
+      ) {
+        edges {
+          node {
+            frontmatter
+            {
+              path
+            }
+          }
+        }
+      }
+
+      gallery: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/gallery/*.md"}}
       ) {
         edges {
           node {
@@ -54,6 +68,12 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-
+    result.data.gallery.edges.forEach(({ node }) => {
+      createPage({
+        path:node.frontmatter.path,
+        component: galleryPageTemplate,
+        context: {},
+      })
+    })
   })
 }
