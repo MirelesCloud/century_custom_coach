@@ -1,10 +1,14 @@
 ---
 path: "/oil-change"
-title: "Oil Change"
+title: "Oil Change Service"
 image: "../../images/engine.jpg"
-sub-title: "Complete Fluid Replacement"
-description: "Whether you are going through an insurance company or paying out of pocket, we will go the extra mile in providing you with friendly experienced office staff, fast and convenient service, with guaranteed quality vehicle repairs. We will restore your car, truck, van, or SUV to pre-accident condition as fast as possible and get you back on the road."
-heading: "Car Observation"
+sub-title: "Full Service Oil, Lube & Filter Change "
+description: "Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.
+
+Century Custom Coach look inside, outside, under the hood and underneath the car, then explain the findings and give you a written report."
+heading: "Radiator & Cooling System Repair"
 showcase: "../../images/ss.jpg"
 feature: "../../images/sst.jpg"
-text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+text: "Overheating, or failure in the cooling system, is the most common cause of mechanical breakdowns on the road that leave you stranded, and can cause severe damage to both the engine and transmission. Make sure you take good care of your vehicle to reduce the amount of repairs and damage to your radiator.
+
+Coolant or anti-freeze fluid protects your engine from freezing as well. Over time, coolant’s effectiveness can diminish because it loses many of its protective properties. This will ultimately lead to the radiator rusting and failing. The cooling system also becomes blocked by built-up deposits from oil, grease, scale, hose decomposition, and other materials. Century Custom Coach recommends keeping your cooling system maintained at least once a year, so schedule an appointment with us today."

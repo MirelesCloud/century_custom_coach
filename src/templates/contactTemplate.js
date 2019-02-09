@@ -45,7 +45,7 @@ export default function Contact({ data }) {
       </section>
       <section className="contact-info-area padd-5">
             <div className="container">
-                <div className="row">
+                <div className="row" style={{display:"flex"}}>
                     <div className="col-md-4 col-sm-6 col-xs-12">
                         <div className="contact-info" >
                             <div className="icon-box"><i className="flaticon-location"></i></div>
@@ -53,18 +53,18 @@ export default function Contact({ data }) {
                             <span>{ frontmatter.city }</span>
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-xs-12">
+                    <div className="col-md-4 col-sm-6 col-xs-12 ">
                         <div className="contact-info" >
                             <div className="icon-box"><i className="flaticon-smartphone-call"></i></div>
                             <h5>{ frontmatter.phone }</h5>
                             <span>{ frontmatter.hours }</span>
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-xs-12">
+                    <div className="col-md-4 col-sm-6 col-xs-12 ">
                         <div className="contact-info" >
                             <div className="icon-box"><i className="flaticon-message"></i></div>
-                            <h5><small>{ frontmatter.email }</small></h5>
-                            <span>{ frontmatter.tag }</span>
+                            <h5 ><a href="mailto:centurycustomcoach@gmail.com" style={{color:"#fff"}}>{frontmatter.tag}</a></h5>
+                            <span>Today</span>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ export default function Contact({ data }) {
            <div className="container">
                <div className="sec-title text-center">
                    <h2>Get In <span>Touch</span></h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.</p>
+                   <p>Let us know how we can help you with your vehicle today</p>
                </div>
                <div className="default-form-area">
                   <ContactForm/>

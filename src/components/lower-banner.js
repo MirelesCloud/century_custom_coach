@@ -22,10 +22,9 @@ const LowerBackground = () => (
                 backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
 	        <div className="container">
 	            <div className="text-center">
-	                <h2>We are the most trusted car repair company in West L.A. The best service is our goal.</h2>
-	                <div className="text">Some lorem ipsum subtitle will be here ipsum dolor</div>
+	                <h2>Your quality full service autmotive repair, paint and body shop in West L.A.</h2>
+	                <div className="text">Thousands of satisfied customers over 30 years.</div>
 	                <a href="contact.html" className="btn-style-five">Contact Us</a>
-	                <a href="https://example.com" className="btn-style-eight">Learn More</a>
 	            </div>
 	        </div>
 	    </section>

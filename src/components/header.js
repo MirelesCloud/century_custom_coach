@@ -25,7 +25,7 @@ const HeaderTemplate = ({siteTitle}) => (
 		                    <div className="icon-box"><span><FontAwesomeIcon icon={faPhoneVolume} className="fa-2x m-2" /></span></div>
 		                    <ul className="list-unstyled" id="header-upper">
 		                        <li><strong>Call Us</strong></li>
-		                        <li id="header-upper">(310) 478-5855</li>
+		                        <li id="header-upper"><a href="tel:1-310-478-5855">(310) 478-5855</a></li>
 		                    </ul>
 		                </div>
 		                <div className="upper-column info-box">

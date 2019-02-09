@@ -1,9 +1,11 @@
 ---
-path: "/electronics-repair"
-title: "Electrical System Service"
+path: "/exhaust"
+title: "Exhaust Service"
 image: "../../images/engine.jpg"
-sub-title: "Starting, Charging, Electrical System Repair"
-description: "The charging system keeps your battery from dying. Today’s vehicles have sophisticated electronic devices and computer systems, making the charging system more important than ever. A failing charging system, along with any electrical car problems, cause serious damage to electrical components. This will result in expensive repairs, so Schedule an Appointment with us today to have these systems inspected."
+sub-title: "Muffler Repair & Exhaust Service"
+description: "Your exhaust system really starts at the front of your car, right behind your engine. Exhaust manifolds connect to the cylinder heads, where they collect exhaust gases. As the gases move through the exhaust system, they're first analyzed by oxygen sensors, then refined by the catalytic converter and, finally, muffled by the muffler.
+
+So by the time those gases leave the vehicle, your emission system has made your car run smoother, cleaner, and quieter."
 heading: "Battery Service"
 showcase: "../../images/ss.jpg"
 feature: "../../images/sst.jpg"
