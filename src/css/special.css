@@ -3030,6 +3030,10 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 .contact-info-area {
 }
 
+.contact-info-area .contact-info-col {
+	flex: 1;
+}
+
 .contact-info-area .contact-info {
   text-align: center;
   border: 1px solid #c21605;
