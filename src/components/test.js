@@ -1,26 +1,45 @@
-import React from 'react';
-import '../css/fonts/flaticon.css'
+import React, { Component } from 'react';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-const Test = () => (
- <div className="row">
-   <div className="container text-center">
 
-     <i className="flaticon-traffic-cone" style={{color:"green"}}></i>
-     <h1>Hello</h1>
-       <div className="single-item">
-         <div className="icon-box">
-           <i className="flaticon-001-traffic-cone"></i>
-         </div>
-         <div className="content-box">
-           <h3>Car Wash</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do.</p>
-           <a href="service-single.html"> details <i className="fa fa-caret-right"></i></a>
-         </div>
-       </div>
-     <span className="flaticon-003-tire" style={{color:"#000"}}></span>
-   </div>
+class Test extends Component {
+  constructor() {
+    super();
 
- </div>
-)
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
+  }
+
+
+
+
+  render() {
+    return (
+      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+        <DropdownToggle caret>
+          Dropdown
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem header>Header</DropdownItem>
+          <DropdownItem>Some Action</DropdownItem>
+          <DropdownItem disabled>Action (disabled)</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Foo Action</DropdownItem>
+          <DropdownItem>Bar Action</DropdownItem>
+          <DropdownItem>Quo Action</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    );
+  }
+}
 
 export default Test

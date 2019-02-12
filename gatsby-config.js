@@ -9,6 +9,16 @@ module.exports = {
     url: `https://www.centurycustomcoach.com`,
     description: `Automotive mechanic, repair, paint and body shop`,
     image: `/src/images/Danny.jpg`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'contact',
+        link: '/contact'
+      }
+    ]
   },
 
   plugins: [

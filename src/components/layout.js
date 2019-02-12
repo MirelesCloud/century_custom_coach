@@ -11,21 +11,25 @@ import Footer from './footer'
 const Layout = ({children}) => (
     <StaticQuery
       query={graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      file(relativePath: {eq: "images/home/nikolay-tchaouchev-785292-unsplash.jpg"}) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_tracedSVG
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+              menuLinks {
+                name
+                link
+              }
+            }
+          }
+          file(relativePath: {eq: "images/home/nikolay-tchaouchev-785292-unsplash.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
           }
         }
-      }
-    }
-  `}
+      `}
       render={data => (
         <>
           <Helmet
@@ -45,7 +49,7 @@ const Layout = ({children}) => (
 
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
-          <Header/>
+          <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <div className="boxed_wrapper">{children}</div>
           <Footer/>
 

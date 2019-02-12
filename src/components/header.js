@@ -7,9 +7,11 @@ import { faPhoneVolume, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-
 
 import Navbar from  './navbar'
 
-const HeaderTemplate = ({siteTitle}) => (
+const Header = ({ siteTitle, menuLinks }) => (
   <section>
+    
     <Navbar/>
+
     <div className="header-upper">
 		    <div className="container">
 		        <div className="clearfix">
@@ -47,12 +49,6 @@ const HeaderTemplate = ({siteTitle}) => (
 		    </div>
 		</div>
   </section>
-)
-
-const Header = () => (
-  <div className="boxed_wrapper">
-    <HeaderTemplate/>
-  </div>
 )
 
 export default Header
