@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +27,7 @@ const Footer = () => (
                              <h3>Come to get world class service.</h3>
                          </div>
                          <div className="col-md-3">
-                             <a href="contact.html" className="btn-style-eight pull-right">contact us</a>
+                             <Link to="/contact" className="btn-style-eight pull-right">contact us</Link>
                          </div>
                      </div>
                  </div>

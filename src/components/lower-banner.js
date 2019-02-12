@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 const LowerBackground = () => (
   <section id='services'>
@@ -24,7 +24,7 @@ const LowerBackground = () => (
 	            <div className="text-center">
 	                <h2>Your quality full service autmotive repair, paint and body shop in West L.A.</h2>
 	                <div className="text">Thousands of satisfied customers over 30 years.</div>
-	                <a href="contact.html" className="btn-style-five">Contact Us</a>
+	                <Link to="/contact" className="btn-style-five">Contact Us</Link>
 	            </div>
 	        </div>
 	    </section>

@@ -44,7 +44,7 @@ service:
     desc: "Our expert technicians will be able to tell you what is going on under the hood."
   serviceTwo:
     title: "Paint & Body Shop"
-    desc: "Fast, efficient professionals for your vehicle&#39;s paint and dent repair needs."
+    desc: "Fast, efficient professionals for your vehicle's paint and dent repair needs."
   serviceThree:
     title: "Oil Change"
     desc: "Changing your oil and filter regularly is the single most important auto service."

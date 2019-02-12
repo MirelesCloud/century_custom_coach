@@ -1,10 +1,10 @@
 ---
 path: "/suspension"
 title: "Suspension & Steering Service"
-image: "../../images/engine.jpg"
+image: "../../images/suspension-banner.jpg"
 sub-title: "Suspension Service & Repair"
 description: "Balance, stability and smoothness – they’re what ensure a comfortable ride for you and your passengers, and your car’s steering and suspension are what make this possible. Steering and suspension are responsible for keeping your wheels firmly intact with the ground, and a major player in keeping your car from veering to one side or the road."
 heading: "Shock, Strut, Coil Spring Service"
-showcase: "../../images/ss.jpg"
-feature: "../../images/sst.jpg"
+showcase: "../../images/shock-replacement.jpg"
+feature: "../../images/WheelAlignment.jpg"
 text: "Your vehicle’s suspension system helps provide a safe and comfortable ride by ensuring that your wheels stay in contact with the road. If your ride’s gotten bumpy, it’s time to have your suspension system, shocks and struts checked by once of our expert mechanics. You can tell if your vehicle has bad struts and shocks or worn springs. When your ride has become bouncy, if your vehicle bottoms out, the front end of the vehicle loses control while making a sudden stop, the vehicle swerves more than normal when changing lanes, of if the vehicle sags in the front or the rear – it’s time to bring your car to Century Custom Coach. "

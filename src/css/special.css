@@ -3013,13 +3013,14 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 }
 .two-column .content ul li a:before{
     color: #c21605;
-    content: "\f046";
+    /*content: "\f046";*/
     font-family: "FontAwesome";
     font-size: 20px;
     left: 0;
     line-height: 23px;
     position: absolute;
 }
+
 
 /***
 =======================================

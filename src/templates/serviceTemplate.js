@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 
@@ -19,11 +19,11 @@ export default function ServiceTemplate({ data }) {
             <h2 className="text-uppercase">{frontmatter.title}</h2>
             <ul className="breadcumb">
               <li>
-                <a href="https://example.com"><Link to="/">Home</Link></a>
+                <Link to="/">Home</Link>
                 <i className="fa fa-chevron-right" aria-hidden="true"><FontAwesomeIcon icon={faChevronRight} className="fa-sm"/></i>
               </li>
               <li>
-                <a className="active" href="https://example.com"><Link to="/pages/body-shop">services</Link></a>
+                <Link to="/pages/body-shop" className="active">services</Link>
               </li>
             </ul>
           </div>
@@ -51,10 +51,10 @@ export default function ServiceTemplate({ data }) {
                     <br/>
                     <ul dangerouslySetInnerHTML={{ __html: html }} />
                     <ul>
-                      <li><a href="/">Expert Mechanic</a></li>
-                      <li><a href="/">Quick Service</a></li>
-                      <li><a href="/">24 Hour Service</a></li>
-                      <li><a href="/">Home Service</a></li>
+                      <li><Link to="/"><FontAwesomeIcon icon={faCheckSquare} style={{color:"#c21605"}}/> Expert Mechanic</Link></li>
+                      <li><Link to="/"><FontAwesomeIcon icon={faCheckSquare} style={{color:"#c21605"}}/> Quick Service</Link></li>
+                      <li><Link to="/"><FontAwesomeIcon icon={faCheckSquare} style={{color:"#c21605"}}/> Dent & Collision Repair</Link></li>
+                      <li><Link to="/"><FontAwesomeIcon icon={faCheckSquare} style={{color:"#c21605"}}/> Paint Shop</Link></li>
                     </ul>
                   </div>
                 </div>
