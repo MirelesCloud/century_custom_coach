@@ -23,7 +23,7 @@ export default function ServiceTemplate({ data }) {
                 <i className="fa fa-chevron-right" aria-hidden="true"><FontAwesomeIcon icon={faChevronRight} className="fa-sm"/></i>
               </li>
               <li>
-                <Link to="/pages/body-shop" className="active">services</Link>
+                <Link to="/services" className="active">services</Link>
               </li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
         text
         image {
           childImageSharp {
-            fluid(maxWidth: 2000){
+            fluid(maxWidth: 2048){
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }

@@ -9,9 +9,7 @@ import Navigation from  './navbar'
 
 const Header = ({ siteTitle, menuLinks }) => (
   <section>
-
     <Navigation/>
-
     <div className="header-upper">
 		    <div className="container">
 		        <div className="clearfix">
