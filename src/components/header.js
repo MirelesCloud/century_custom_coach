@@ -5,12 +5,12 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume, faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
-import Navbar from  './navbar'
+import Navigation from  './navbar'
 
 const Header = ({ siteTitle, menuLinks }) => (
   <section>
-    
-    <Navbar/>
+
+    <Navigation/>
 
     <div className="header-upper">
 		    <div className="container">
