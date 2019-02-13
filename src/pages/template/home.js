@@ -6,7 +6,6 @@ import About from '../../components/about'
 import Services from '../../components/services'
 import Gallery from '../../components/gallery'
 import Reviews from '../../components/reviews'
-import Test from '../../components/test'
 
 const Home = () => (
   <Layout>
@@ -16,7 +15,7 @@ const Home = () => (
     <Services/>
     <Gallery/>
     <Reviews/>
-    <Test/>
+
   </Layout>
 )
 

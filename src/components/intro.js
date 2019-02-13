@@ -13,21 +13,21 @@ const IntroTemplate = () => (
         query ImageQuery {
           auto1: file(relativePath: {eq: "images/home/rawpixel-741689-unsplash.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
-          auto2: file(relativePath: {eq: "images/home/nikolay-tchaouchev-785292-unsplash.jpg"}) {
+          auto2: file(relativePath: {eq: "images/home/whereslugo-465120-unsplash.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
           auto3: file(relativePath: {eq: "images/home/photodune-3980192-auto-mechanic-at-car-suspension-repair-work-m-1024x681.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1080) {
+              fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
@@ -38,7 +38,7 @@ const IntroTemplate = () => (
         <>
         <div className="rev_slider_wrapper">
           <div className="rev_slider">
-            <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={true} showThumbs={false}>
+            <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={false} showThumbs={false}>
               <div >
                  <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
                  <div className="carousel-header-container">

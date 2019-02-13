@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
-
-
 class Navigation extends React.Component {
   constructor() {
     super();
@@ -20,8 +18,6 @@ class Navigation extends React.Component {
       isOpen: !this.state.isOpen
     })
   }
-
-
 
   render() {
     return (

@@ -2,8 +2,25 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Swiper from 'react-id-swiper';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+
+const params = {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loops: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    };
 
 const ReviewsTemplate = () => (
     <StaticQuery
@@ -41,13 +58,15 @@ const ReviewsTemplate = () => (
 					      <h2>Client <span>Feedback</span></h2>
 				      </div>
 				      <div className="row">
+                <Swiper {...params}>
+
                 <div className="col-md-4">
                   <div className="item">
   						      <div className="image-box">
                       <Img fluid={data.review1.childImageSharp.fluid} style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
   						      </div>
   						      <div className="text">
-  							     <h4>Name</h4>
+  							     <h4>Sharon B.</h4>
   							     <div className="icon">
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
@@ -55,7 +74,7 @@ const ReviewsTemplate = () => (
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                       <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                      </div>
-  							     <p>Review</p>
+  							     <p>My husband and I were so delighted that our first experience working with this long-standing establishment was a pleasant one. </p>
   						      </div>
   					      </div>
                 </div>
@@ -91,10 +110,65 @@ const ReviewsTemplate = () => (
                        <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                        <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
                    </div>
-    							 <p>...Danny and his crew at the shop always do an amazing job. I can't thank them enough. I will always bring my car in here if I ever need a body shop again... </p>
+    							 <p>Danny and his crew at the shop always do an amazing job. I can't thank them enough. I will always bring my car in here if I ever need a body shop again... </p>
     						</div>
     					</div>
+                </div>
+                  <div className="col-md-4">
+                    <div className="item">
+                      <div className="image-box">
+                       <Img fluid={data.review3.childImageSharp.fluid}  style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
+                      </div>
+                      <div className="text">
+                       <h4>Tina V.</h4>
+                       <div className="icon">
+                         <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                         <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                         <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                         <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                         <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     </div>
+                     <p>My car had some damage to the front and the bumper. Though it took a couple of rounds to complete the work successfully the outcome was marvelous and very clean. I absolutely recommend this shop for their professional work and will definitely go back ... </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="item">
+                  <div className="image-box">
+                   <Img fluid={data.review3.childImageSharp.fluid}  style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
+                  </div>
+                  <div className="text">
+                   <h4>Lily H.</h4>
+                   <div className="icon">
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                     <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                 </div>
+                 <p>Everything from the customer service to the actual work done on the body of the car was perfect! I'm so glad I took my car there and would definitely go back there again if I needed to! </p>
+              </div>
             </div>
+          </div>
+          <div className="col-md-4">
+            <div className="item">
+              <div className="image-box">
+               <Img fluid={data.review3.childImageSharp.fluid}  style={{width:"100px", margin:"0 auto", borderRadius:"15px 0"}}/>
+              </div>
+              <div className="text">
+               <h4>Karen S.</h4>
+               <div className="icon">
+                 <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                 <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                 <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                 <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+                 <i className="fa fa-star" aria-hidden="true"><FontAwesomeIcon icon={faStar} /></i>
+             </div>
+             <p>Danny and his crew at the shop always do an amazing job. I can't thank them enough. I will always bring my car in here if I ever need a body shop again... </p>
+          </div>
+        </div>
+      </div>
+    </Swiper>
 				</div>
         <div className="sec-title mt-5">
           <h4>Read more amazing Yelp reviews or leave a comment yourself <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?osq=century+custom+coach" target="_blank" rel="noopener noreferrer">here</a></h4>
