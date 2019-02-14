@@ -25,7 +25,7 @@ const IntroTemplate = () => (
               }
             }
           }
-          auto3: file(relativePath: {eq: "images/home/photodune-3980192-auto-mechanic-at-car-suspension-repair-work-m-1024x681.jpg"}) {
+          auto3: file(relativePath: {eq: "images/home/david-hellmann-600264-unsplash.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_tracedSVG

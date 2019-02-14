@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
@@ -44,12 +44,12 @@ const Feature = () => (
                         <Img fluid={data.feature1.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
+                            <Link to="/engine"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></Link>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="https://example.com">Expert Mechanic</a></h4>
+                        <h4><Link to="/engine">Expert Mechanic</Link></h4>
                       </div>
                     </div>
                   </div>
@@ -59,12 +59,12 @@ const Feature = () => (
                         <Img fluid={data.feature2.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
+                            <Link to="/body-shop"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></Link>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="https://example.com">Pro Body Shop</a></h4>
+                        <h4><Link to="/body-shop">Pro Body Shop</Link></h4>
                       </div>
                     </div>
                   </div>
@@ -74,12 +74,12 @@ const Feature = () => (
                         <Img fluid={data.feature3.childImageSharp.fluid} alt="header"/>
                         <div className="overlay">
                           <div className="inner">
-                            <a href="https://example.com"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></a>
+                            <Link to="/oil-change"><FontAwesomeIcon icon={faLink} className="fa-2x" style={{color:"#fff"}}/></Link>
                           </div>
                         </div>
                       </figure>
                       <div className="content">
-                        <h4><a href="https://example.com">Quick Service</a></h4>
+                        <h4><Link to="/oil-change">Quick Service</Link></h4>
                       </div>
                     </div>
                   </div>

@@ -40,7 +40,7 @@ class Navigation extends React.Component {
               <Link className="nav-link" to="/gallery">Gallery</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/testimonials">Testimonials</Link>
+              <Link className="nav-link" to="/reviews">Testimonials</Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle caret className="bg-black text-muted nav-link" style={{border:"none", fontSize:"1.1rem"}} >

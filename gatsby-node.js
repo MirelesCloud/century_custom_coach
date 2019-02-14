@@ -8,6 +8,8 @@ exports.createPages = ({ actions, graphql }) => {
   const galleryPageTemplate = path.resolve(`src/templates/galleryTemplate.js`)
   const homePageTemplate = path.resolve(`src/templates/homeTemplate.js`)
   const servicesHome = path.resolve(`src/templates/servicesHomeTemplate.js`)
+  const aboutPageTemplate = path.resolve(`src/templates/aboutTemplate.js`)
+  const reviewsPageTemplate = path.resolve(`src/templates/reviewsTemplate.js`)
 
 
   return graphql(`
@@ -26,6 +28,18 @@ exports.createPages = ({ actions, graphql }) => {
 
       serviceHome: allMarkdownRemark(
         filter: {fileAbsolutePath: { glob: "**/src/pages/home/services.md"}}
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+
+      about: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/home/about.md"}}
       ) {
         edges {
           node {
@@ -73,6 +87,19 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+
+      reviews: allMarkdownRemark(
+        filter: {fileAbsolutePath: { glob: "**/src/pages/reviews/*.md"}}
+      ) {
+        edges {
+          node {
+            frontmatter
+            {
+              path
+            }
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -91,6 +118,14 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: servicesHome,
+        context: {},
+      })
+    })
+
+    result.data.about.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: aboutPageTemplate,
         context: {},
       })
     })
@@ -115,6 +150,14 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path:node.frontmatter.path,
         component: galleryPageTemplate,
+        context: {},
+      })
+    })
+
+    result.data.reviews.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: reviewsPageTemplate,
         context: {},
       })
     })
