@@ -38,33 +38,34 @@ const Footer = () => (
             <div className="footer-upper">
 
               <div className="row">
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-4 col-sm-6">
                   <div className="footer-widget about-widget">
                     <figure className="image-box">
                       <h2 ><strong style={{color:"#fff"}}>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h2>
 
                     </figure>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <p>Contact us today and get world class service for your car or truck.  We are here to service you.</p>
 
 
                   </div>
                 </div>
 
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-4 col-sm-6">
                   <div className="footer-widget quick-links">
                     <h3 className="title">Our Services</h3>
                     <ul>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Car Wash</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Engine Replace</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Tire Repair</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Car Paint</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Car Observation</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Home Service</a></li>
-                      <li><a href="https://example.com"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Engine Replace</a></li>
+                      <li><Link to="/engine"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Engine & Transmission Repair</Link></li>
+                      <li><Link to="/body-shop"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Paint & Body Shop</Link></li>
+                      <li><Link to="/oil-change"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Oil & Filter Change</Link></li>
+                      <li><Link to="/brakes"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Brake Repair</Link></li>
+                      <li><Link to="/suspension"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Suspension & Steering</Link></li>
+                      <li><Link to="/exhaust"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Muffler & Exhaust Repair</Link></li>
+                      <li><Link to="/electronics-repair"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Electrical Repair & Battery</Link></li>
+                      <li><Link to="/diagnostics"><FontAwesomeIcon icon={faAngleRight} style={{color:"#c21605"}}/>&nbsp;&nbsp;Diagnostics & Tune Up</Link></li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-md-3 col-sm-6">
+                <div className="col-md-4 col-sm-6">
                   <div className="footer-widget opening-hour">
                     <h3 className="title">Working Hours</h3>
                     <ul className="day-time">
@@ -76,10 +77,6 @@ const Footer = () => (
                         <li><span>Saturday &nbsp;&nbsp;&nbsp;:</span>&nbsp;&nbsp;&nbsp; <span>Closed</span></li>
                         <li><span>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span> &nbsp;&nbsp;&nbsp;<span>Closed</span></li>
                     </ul>
-                  </div>
-                </div>
-                <div className="col-md-3 col-sm-6">
-                  <div className="footer-widget experts-column">
                   </div>
                 </div>
               </div>
