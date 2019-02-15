@@ -3122,6 +3122,17 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   margin-top:30px;
 }
 
+.contact_success {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 6vw;
+  background: rgba(72,72,72,0.45);
+  color: #fff;
+  padding: 0.5rem;
+}
+
 /*
 ================================
   features
