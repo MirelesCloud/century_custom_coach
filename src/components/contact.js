@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = (props) => (
   <div className="default-form-area">
-      <form name="contact" className="default-form"  method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact" className="default-form"  action="/success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
           <div className="row clearfix">
             <div className="col-md-6 col-sm-6 col-xs-12">
