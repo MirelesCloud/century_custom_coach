@@ -34,9 +34,9 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Contact</h1>
+      <div className="default-form-area">
         <form
+          className="default-form"
           name="contact"
           method="post"
           action="/success/"
@@ -46,33 +46,45 @@ export default class ContactForm extends React.Component {
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+            <p hidden>
+              <label>
+                Don’t fill this out:{" "}
+                <input name="bot-field" onChange={this.handleChange} />
+              </label>
+            </p>
+          <div className="row clearfix" >
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="text" name="name" onChange={this.handleChange} className="form-control" placeholder="Your Name"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="email" name="email" onChange={this.handleChange}className="form-control required email" placeholder="Your Email"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="text" name="phone" onChange={this.handleChange} className="form-control"  placeholder="Phone"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group">
+                <input type="text" name="subject" onChange={this.handleChange} className="form-control" placeholder="Subject"/>
+              </div>
+            </div>
+            <div className="col-md-12 col-sm-12 col-xs-12">
+              <div className="form-group style-two">
+                <textarea name="message" onChange={this.handleChange} className="form-control textarea required" placeholder="Message" ></textarea>
+              </div>
+            </div>
+          </div>
+          <div className="contact-section-btn text-center">
+            <div className="form-group style-two">
+              <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value=""/>
+              <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
+            </div>
+          </div>
         </form>
       </div>
     );

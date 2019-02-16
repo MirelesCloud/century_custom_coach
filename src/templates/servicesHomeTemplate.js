@@ -32,7 +32,6 @@ export default function ServicesHomeTemplate({ data }) {
       <section className="our-services padd-1" style={{
               backgroundImage: `url(${frontmatter.service.image.childImageSharp.fluid.src})`}}
               >
-
         <div className="container">
           <div className="sec-title text-center">
                     <h2>Our <span>Services</span></h2>

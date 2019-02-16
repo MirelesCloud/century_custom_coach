@@ -7,9 +7,6 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 import Layout from '../components/layout'
 import ContactForm from '../components/contact'
 
-
-
-
 const StoreLocation = withScriptjs(withGoogleMap(() => {
   return (
       <GoogleMap
