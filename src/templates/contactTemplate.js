@@ -5,7 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 import Layout from '../components/layout'
-import ContactTest from '../pages/contact'
+import ContactForm from '../components/contact'
 
 const StoreLocation = withScriptjs(withGoogleMap(() => {
   return (
@@ -77,7 +77,7 @@ export default function Contact({ data }) {
                    <p>Let us know how we can help you with your vehicle today</p>
                </div>
                <div className="default-form-area">
-                  <ContactTest/>
+                  <ContactForm />
                </div>
            </div>
        </section>
