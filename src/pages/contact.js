@@ -1,80 +1,45 @@
-import React from "react";
-import { navigateTo } from "gatsby-link";
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+import React from 'react'
 
-export default class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const ContactForm = (props) => (
+  <div className="default-form-area">
+      <form name="contact" className="default-form"  action="/success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+          <div className="row clearfix">
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="text" name="name" className="form-control" placeholder="Your Name" id="name"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="email" name="email" className="form-control required email" placeholder="Your Email" id="email"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group style-two">
+                <input type="text" name="phone" className="form-control"  placeholder="Phone" id="phone"/>
+              </div>
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="form-group">
+                <input type="text" name="ubject" className="form-control" placeholder="Subject" id="subject"/>
+              </div>
+            </div>
+            <div className="col-md-12 col-sm-12 col-xs-12">
+              <div className="form-group style-two">
+                <textarea name="message" className="form-control textarea required" placeholder="Message" id="message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div className="contact-section-btn text-center">
+            <div className="form-group style-two">
+              <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value=""/>
+              <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
+            </div>
+          </div>
+      </form>
+  </div>
+)
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
-
-  render() {
-    return (
-      <div>
-        <h1>Contact</h1>
-        <form
-          name="contact"
-          method="post"
-          action="/success/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:<br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
-    );
-  }
-}
+export default ContactForm

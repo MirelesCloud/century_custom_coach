@@ -5,7 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 import Layout from '../components/layout'
-import ContactForm from '../pages/contact'
+import ContactForm from '../components/contact'
 
 
 
