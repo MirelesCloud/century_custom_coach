@@ -2,42 +2,24 @@ import React from 'react'
 
 const ContactTest = (props) => (
   <div className="default-form-area">
-      <form name="contact" className="default-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="bot-field" />
-        <div className="row clearfix">
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <div className="form-group style-two">
-              <input type="text" name="name" className="form-control" placeholder="Your Name" id="name"/>
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <div className="form-group style-two">
-              <input type="email" name="email" className="form-control required email" placeholder="Your Email" id="email"/>
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <div className="form-group style-two">
-              <input type="text" name="phone" className="form-control"  placeholder="Phone" id="phone"/>
-            </div>
-          </div>
-          <div className="col-md-6 col-sm-6 col-xs-12">
-            <div className="form-group">
-              <input type="text" name="ubject" className="form-control" placeholder="Subject" id="subject"/>
-            </div>
-          </div>
-          <div className="col-md-12 col-sm-12 col-xs-12">
-            <div className="form-group style-two">
-              <textarea name="message" className="form-control textarea required" placeholder="Message" id="message"></textarea>
-            </div>
-          </div>
-        </div>
-        <div className="contact-section-btn text-center">
-          <div className="form-group style-two">
-            <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value=""/>
-            <button className="btn-style-five" type="submit" data-loading-text="Please wait...">send message</button>
-          </div>
-        </div>
-      </form>
+    <form method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+      <div className="field half first">
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div className="field half">
+        <label htmlFor="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div className="field">
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" rows="6"></textarea>
+      </div>
+      <ul className="actions">
+        <li><input type="submit" value="Send Message" className="special" /></li>
+        <li><input type="reset" value="Clear" /></li>
+      </ul>
+    </form>
   </div>
 )
 
