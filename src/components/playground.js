@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class Example1 extends React.Component {
   render() {
     //const stringProps = JSON.stringify(this.props.myProp);
@@ -39,6 +40,7 @@ const Layout = ({children}) => (
 
 const Playground = () => (
   <Layout>
+
     <h1>CHECK OUT MY PROPS OBJECT</h1>
     <Example1 myProp="horse"/>
     <Example2 myProp="shoe"/>

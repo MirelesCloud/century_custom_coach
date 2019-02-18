@@ -1,4 +1,39 @@
 import React from 'react'
+import Slider from 'react-slick'
+
+class SimpleSlider extends React.Component {
+ render() {
+   var settings = {
+     dots: true,
+     infinite: true,
+     speed: 2000,
+     slidesToShow: 3,
+     slidesToScroll: 2
+   };
+   return (
+     <Slider {...settings} style={{background:"green"}} className="text-center mt-5">
+       <div>
+         <h3 >1</h3>
+       </div>
+       <div>
+         <h3>2</h3>
+       </div>
+       <div>
+         <h3>3</h3>
+       </div>
+       <div>
+         <h3>4</h3>
+       </div>
+       <div>
+         <h3>5</h3>
+       </div>
+       <div>
+         <h3>6</h3>
+       </div>
+     </Slider>
+   );
+ }
+}
 
 
 const merchandise = [
@@ -10,8 +45,26 @@ const merchandise = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
+const show = [
+  {category: "engine", image: "../images/gallery/8.jpg"},
+  {category: "engine", image: "../images/gallery/9.jpg"},
+  {category: "paint", image: "../images/gallery/10.jpg"},
+  {category: "oil", image: "../images/gallery/11.jpg"}
+]
+
+function GalleryTest(props) {
+  const photos = show.map((item, idx) =>
+  <div key={idx}>
+    <p>{item.category}</p>
 
 
+  </div>
+);
+
+ return (
+   <div>{photos}</div>
+ )
+}
 
 const products = [1, 2, 3, 4, 5];
 
@@ -67,17 +120,16 @@ function ThirdTest(props) {
 
   return (
     <div>
+        <GalleryTest/>
         <ul>{stuff}</ul>
         <Test/>
         <AnotherTest/>
         <Blog/>
+        <ThirdTest/>
     </div>
 
 
   )
 }
 
-
-
-
-export default ThirdTest
+export default SimpleSlider

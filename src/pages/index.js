@@ -8,6 +8,8 @@ import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import '../../node_modules/slick-carousel/slick/slick.css'
+import '../../node_modules/slick-carousel/slick/slick-theme.css'
 import '../css/main.css'
 import '../css/special.css'
 import '../css/contact.css'
@@ -22,7 +24,7 @@ const TemplateWrapper = ({data}) => (
   <section>
     <SEO/>
     <Home/>
-  
+
   </section>
 )
 
