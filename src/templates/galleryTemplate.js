@@ -2,10 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import Swiper from 'react-id-swiper';
 import Masonry from 'react-masonry-component';
-
-
 
 const masonryOptions = {
     transitionDuration: 0
@@ -13,26 +10,9 @@ const masonryOptions = {
 
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
-const params = {
-      slidesPerView: 5,
-      spaceBetween: 10,
-      loops: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      }
-    };
-
 export default function Gallery({ data }) {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-
-
 
   return (
     <Layout>
@@ -46,21 +26,6 @@ export default function Gallery({ data }) {
             </div>
           </div>
         </section>
-        <section className="single-service padd-1">
-          <div className="row" id='gallery'>
-            <Swiper {...params} >
-              {data.shopGallery.edges.map((img, index) => (
-
-                  <div className="col-lg-3 col-md-4 col-xs-6" key={index} >
-                    <div  className="d-block mb-4 h-100 gallery" >
-                      <Img fluid={img.node.childImageSharp.fluid}/>
-                    </div>
-                  </div>
-              ))}
-            </Swiper>
-          </div>
-        </section>
-        <hr/>
 
         <Masonry
             className={'single-service padd-1'}
@@ -78,7 +43,6 @@ export default function Gallery({ data }) {
               </div>
             ))}
         </Masonry>
-
 
     </Layout>
   )

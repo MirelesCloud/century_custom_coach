@@ -1,0 +1,6 @@
+const GALLERY = [
+  {image: "../../images/f1.jpg", category: "engine"},
+  {image: "../../images/f2.jpg", catgeory: "engine"},
+  {image: "../../images/f3.jpg", category: "paint"}
+
+]

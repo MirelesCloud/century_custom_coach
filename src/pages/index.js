@@ -17,10 +17,12 @@ import '../css/fonts/flaticon.css'
 
 
 
+
 const TemplateWrapper = ({data}) => (
   <section>
     <SEO/>
     <Home/>
+  
   </section>
 )
 
