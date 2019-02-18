@@ -15,6 +15,8 @@ import '../css/responsive.css'
 import '../css/animate.min.css'
 import '../css/fonts/flaticon.css'
 
+
+
 const TemplateWrapper = ({data}) => (
   <section>
     <SEO/>

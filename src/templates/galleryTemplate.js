@@ -3,6 +3,15 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Swiper from 'react-id-swiper';
+import Masonry from 'react-masonry-component';
+
+
+
+const masonryOptions = {
+    transitionDuration: 0
+};
+
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 const params = {
       slidesPerView: 5,
@@ -51,6 +60,26 @@ export default function Gallery({ data }) {
             </Swiper>
           </div>
         </section>
+        <hr/>
+
+        <Masonry
+            className={'single-service padd-1'}
+            elementType={'ul'}
+            options={masonryOptions}
+            disableImagesLoaded={false}
+            updateOnEachImageLoad={false}
+            imagesLoadedOptions={imagesLoadedOptions}
+        >
+            {data.shopGallery.edges.map((img, idx) =>  (
+              <div className="col-lg-3 col-md-4 col-xs-6" key={idx} >
+                <div  className="d-block mb-4 h-100 gallery" >
+                  <Img fluid={img.node.childImageSharp.fluid}/>
+                </div>
+              </div>
+            ))}
+        </Masonry>
+
+
     </Layout>
   )
 }
