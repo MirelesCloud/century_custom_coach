@@ -84,7 +84,7 @@ export default function Contact({ data }) {
        <section className="contact_details sec-padd">
         <div className="home-google-map">
           <StoreLocation
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCqp5IIpnk5kvH5uJ_cTeDbegyVqWn5Dos&v=3.exp&libraries=geometry,drawing,places`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyC74TThaAb-TFIVD1PEYA3pwHZQXf5X_W0&v=3.exp&libraries=geometry,drawing,places`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `350px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
