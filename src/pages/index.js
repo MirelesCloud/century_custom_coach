@@ -1,8 +1,13 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import ScrollToTop from 'react-scroll-up'
 
 import Home from './template/home'
 import SEO from '../components/SEO'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+
 
 import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -24,6 +29,18 @@ const TemplateWrapper = ({data}) => (
   <section>
     <SEO/>
     <Home/>
+
+
+      <ScrollToTop showUnder={160} className="scroll-top" style={{
+          background:"#c21605",
+          width: "50px",
+          height: "50px",
+          borderRadius: "50%",
+        }}
+        >
+        <FontAwesomeIcon icon={faAngleUp} className="fa-2x ml-3 mt-2 " style={{color:"#fff"}}/>
+      </ScrollToTop>
+
 
   </section>
 )
