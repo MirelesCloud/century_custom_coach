@@ -1,6 +1,6 @@
 ---
 path: "/suspension"
-title: "Suspension & Steering Service"
+title: "Suspension Service"
 image: "../../images/suspension-banner.jpg"
 sub-title: "Suspension Service & Repair"
 description: "Balance, stability and smoothness – they’re what ensure a comfortable ride for you and your passengers, and your car’s steering and suspension are what make this possible. Steering and suspension are responsible for keeping your wheels firmly intact with the ground, and a major player in keeping your car from veering to one side or the road."

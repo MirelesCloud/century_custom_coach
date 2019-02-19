@@ -1,6 +1,6 @@
 ---
 path: "/oil-change"
-title: "Oil Change & Filter Service"
+title: "Oil Change Service"
 image: "../../images/oil-banner.jpg"
 sub-title: "Full Service Oil, Lube & Filter Change "
 description: "Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.

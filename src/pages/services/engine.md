@@ -1,6 +1,6 @@
 ---
 path: "/engine"
-title: "Engine & Transmission Service"
+title: "Engine Service"
 image: "../../images/engine.jpg"
 sub-title: "Engine Repair and Replace"
 description: "Take care of your engine, and your car has a better chance of lasting for the long haul. If you stay on top of your engine maintenance and tend to any engine repairs immediately, your car or truck will last longer. With something as important as car engine repair, trust the experts at Century Custom Coach. You'll get no greater service or advice."

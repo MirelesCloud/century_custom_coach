@@ -1,6 +1,6 @@
 ---
 path: "/electronics-repair"
-title: "Electrical System Service"
+title: "Electrical Service"
 image: "../../images/electric-banner.jpg"
 sub-title: "Starting, Charging, Electrical System Repair"
 description: "The charging system keeps your battery from dying. Today’s vehicles have sophisticated electronic devices and computer systems, making the charging system more important than ever. A failing charging system, along with any electrical car problems, cause serious damage to electrical components. This will result in expensive repairs, so Schedule an Appointment with us today to have these systems inspected."

@@ -1,43 +1,4 @@
 import React from 'react'
-import Slider from 'react-slick'
-
-
-
-
-class SimpleSlider extends React.Component {
- render() {
-   var settings = {
-     dots: true,
-     infinite: true,
-     speed: 2000,
-     slidesToShow: 3,
-     slidesToScroll: 2
-   };
-   return (
-     <Slider {...settings} style={{background:"green"}} className="text-center mt-5">
-       <div>
-         <h3 >1</h3>
-       </div>
-       <div>
-         <h3>2</h3>
-       </div>
-       <div>
-         <h3>3</h3>
-       </div>
-       <div>
-         <h3>4</h3>
-       </div>
-       <div>
-         <h3>5</h3>
-       </div>
-       <div>
-         <h3>6</h3>
-       </div>
-     </Slider>
-   );
- }
-}
-
 
 const merchandise = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -123,6 +84,7 @@ function ThirdTest(props) {
 
   return (
     <div>
+
         <GalleryTest/>
         <ul>{stuff}</ul>
         <Test/>
@@ -135,4 +97,4 @@ function ThirdTest(props) {
 
 
 
-export default SimpleSlider
+export default Test

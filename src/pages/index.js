@@ -29,19 +29,15 @@ const TemplateWrapper = ({data}) => (
   <section>
     <SEO/>
     <Home/>
-
-
-      <ScrollToTop showUnder={160} className="scroll-top" style={{
-          background:"#c21605",
-          width: "50px",
-          height: "50px",
-          borderRadius: "50%",
-        }}
-        >
-        <FontAwesomeIcon icon={faAngleUp} className="fa-2x ml-3 mt-2 " style={{color:"#fff"}}/>
-      </ScrollToTop>
-
-
+    <ScrollToTop showUnder={160} className="scroll-top" style={{
+        background:"#c21605",
+        width: "50px",
+        height: "50px",
+        borderRadius: "50%",
+      }}
+      >
+      <FontAwesomeIcon icon={faAngleUp} className="fa-2x ml-3 mt-2 " style={{color:"#fff"}}/>
+    </ScrollToTop>
   </section>
 )
 
