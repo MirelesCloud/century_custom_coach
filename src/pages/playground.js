@@ -1,6 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick'
 
+
+
+
 class SimpleSlider extends React.Component {
  render() {
    var settings = {
@@ -127,9 +130,9 @@ function ThirdTest(props) {
         <Blog/>
         <ThirdTest/>
     </div>
-
-
   )
 }
+
+
 
 export default SimpleSlider

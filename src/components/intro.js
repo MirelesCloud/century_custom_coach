@@ -3,9 +3,12 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
 import Feature from './feature'
+
+
 
 const IntroTemplate = () => (
     <StaticQuery
@@ -25,7 +28,7 @@ const IntroTemplate = () => (
               }
             }
           }
-          auto3: file(relativePath: {eq: "images/home/david-hellmann-600264-unsplash.jpg"}) {
+          auto3: file(relativePath: {eq: "images/home/anders-nord-415747-unsplash.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 2000) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -40,30 +43,30 @@ const IntroTemplate = () => (
           <div className="rev_slider">
             <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={false} showThumbs={false}>
               <div >
-                 <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
-                 <div className="carousel-header-container">
-                   <Fade left>
-                     <h1 className="carousel-header">Full <span style={{color:"#c21605"}}>Service</span> Automotive <span style={{color:"#c21605"}}>Repair</span> and Maintenance</h1>
-                   </Fade>
-                 </div>
+                <Fade top>
+                  <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
+                </Fade>
 
+                 <div className="carousel-header-container">
+                   <Slide bottom>
+                     <h1 className="carousel-header">Full <span style={{color:"#c21605"}}>Service</span> Automotive <span style={{color:"#c21605"}}>Repair</span> and Maintenance</h1>
+                   </Slide>
+                 </div>
               </div>
                  <div>
-                    <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
-                      <div className="carousel-header-container">
-                        <Fade right>
-                          <h1 className="carousel-header">Expert <span style={{color:"#c21605"}}>Paint</span>  and <span style={{color:"#c21605"}}>Body</span> Shop</h1>
-                        </Fade>
+                     <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
 
-                      </div>
+
+
+                  <div className="carousel-header-container">
+                   <h1 className="carousel-header">Expert <span style={{color:"#c21605"}}>Paint</span>  and <span style={{color:"#c21605"}}>Body</span> Shop</h1>
+                  </div>
                 </div>
                 <div>
-                    <Img fluid={data.auto3.childImageSharp.fluid} alt="header 3"/>
-                      <div className="carousel-header-container">
-                        <Fade left>
-                            <h1 className="carousel-header">We <span style={{color:"#c21605"}}>Service</span>  All Makes and <span style={{color:"#c21605"}}>Models</span> </h1>
-                        </Fade>
-                      </div>
+                  <Img fluid={data.auto3.childImageSharp.fluid} alt="header 3"/>
+                  <div className="carousel-header-container">
+                    <h1 className="carousel-header">We <span style={{color:"#c21605"}}>Service</span>  All Makes and <span style={{color:"#c21605"}}>Models</span> </h1>
+                  </div>
                 </div>
             </Carousel>
           </div>
