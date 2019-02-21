@@ -9,7 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
 
-
+import '../css/main.css'
+import '../css/special.css'
+import '../css/contact.css'
+import '../css/responsive.css'
+import '../css/animate.min.css'
+import '../css/fonts/flaticon.css'
 
 const TemplateWrapper = ({data}) => (
   <section>

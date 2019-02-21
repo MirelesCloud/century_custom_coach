@@ -13,7 +13,6 @@ import Reviews from '../../components/reviews'
 const Home = () => (
   <Layout>
     <Intro/>
-
     <About/>
     <Services/>
     <Gallery/>

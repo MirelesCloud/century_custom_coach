@@ -9,8 +9,7 @@ import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css'
-import '../../node_modules/slick-carousel/slick/slick.css'
-import '../../node_modules/slick-carousel/slick/slick-theme.css'
+
 
 import '../css/main.css'
 import '../css/special.css'
@@ -58,6 +57,9 @@ const Layout = ({children}) => (
           <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32"/>
   	      <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"/>
+          <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
             <html lang="en" />
           </Helmet>
 

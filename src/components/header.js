@@ -10,7 +10,7 @@ import Navigation from  './navbar'
 
 const Header = ({ siteTitle, menuLinks }) => (
   <section>
-    <header className="top-bar">
+    <header className="top-bar pt-0">
 		    <div className="container">
 		        <div className="clearfix">
 		            <ul className="top-bar-text float_left">

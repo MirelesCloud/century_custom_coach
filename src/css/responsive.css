@@ -135,10 +135,6 @@
 		font-size: 1.7rem;
 	}
 
-
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -149,6 +145,9 @@
 		text-align: center;
 	}
 
+	#nav {
+		background-color: #c21605;
+	}
 
 }
 
@@ -173,6 +172,8 @@
 	#title {
 		font-size: 3rem;
 	}
+
+
 
 }
 

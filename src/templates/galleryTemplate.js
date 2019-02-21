@@ -11,63 +11,107 @@ const masonryOptions = {
 
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
+export default class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null
+    }
+    console.log(this.props.data)
+  }
+
+  componentDidMount() {
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2
+    })
+  }
+
+  render() {
+    const { markdownRemark } = this.props.data
+    const { frontmatter } = markdownRemark
 
 
-export default function Gallery({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+    return (
+      <Layout>
+        <section className="page-banner" style={{
+                backgroundImage: `url(${frontmatter.image.childImageSharp.fluid.src})`}}
+          >
+          <div className="container">
+            <div className="content">
+              <h2 className="text-uppercase">{ frontmatter.title }</h2>
 
-  const settings = {
-      focusOnSelect: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      speed: 500
-    };
-
-  return (
-    <Layout>
-      <section className="page-banner" style={{
-              backgroundImage: `url(${frontmatter.image.childImageSharp.fluid.src})`}}
-        >
-        <div className="container">
-          <div className="content">
-            <h2 className="text-uppercase">{ frontmatter.title }</h2>
-
+            </div>
           </div>
-        </div>
-      </section>
-
-      <Masonry
-          className={'single-service padd-1'}
-          elementType={'ul'}
-          options={masonryOptions}
-          disableImagesLoaded={false}
-          updateOnEachImageLoad={false}
-          imagesLoadedOptions={imagesLoadedOptions}
-      >
-          {data.shopGallery.edges.map((img, idx) =>  (
-            <div className="col-lg-3 col-md-4 col-xs-6" key={idx} >
-              <div  className="d-block mb-4 h-100 gallery" >
-                <Img className="slider-for" fluid={img.node.childImageSharp.fluid}/>
+        </section>
+        <section className='single-service padd-1 '>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 col-sm-12 col-xs-12 mb-1">
+                <div className="single-item">
+                  <Slider
+                    asNavFor={this.state.nav2}
+                    ref={slider => (this.slider1 = slider)}
+                    fade={true}
+                    arrows={false}
+                  >
+                  {this.props.data.shopGallery.edges.map((img, idx) =>  (
+                    <div className="image-box" key={idx} >
+                      <Img fluid={img.node.childImageSharp.fluid} style={{
+                          display:"block",
+                          marginLeft: "auto",
+                          marginRight: "auto",
+                          width: "100%",
+                          height: "auto"
+                        }}/>
+                    </div>
+                  ))}
+                  </Slider>
+                </div>
               </div>
             </div>
-          ))}
-      </Masonry>
-
-      <Slider {...settings}>
-        {data.shopGallery.edges.map((img, idx) =>  (
-          <div className="col-lg-3 col-md-4 col-xs-6" key={idx} >
-            <div  className="d-block mb-4 h-100 gallery" >
-              <Img className="slider-for" fluid={img.node.childImageSharp.fluid}/>
-            </div>
           </div>
-        ))}
-      </Slider>
-
-
-    </Layout>
-  )
+          <hr/>
+          <Slider
+            asNavFor={this.state.nav1}
+            ref={slider => (this.slider2 = slider)}
+            slidesToShow={4}
+            infinite={true}
+            autoplay={true}
+            autoplaySpeed={3000}
+            swipeToSlide={true}
+            focusOnSelect={true}
+            slickNext={false}
+            arrows={false}
+          >
+          {this.props.data.shopGallery.edges.map((img, idx) =>  (
+            <div  className="col-md-10 col-sm-12 col-xs-12" key={idx} >
+              <Img fluid={img.node.childImageSharp.fluid}/>
+            </div>
+          ))}
+          </Slider>
+        </section>
+        <hr/>
+        <Masonry
+            className={'single-service padd-1'}
+            elementType={'ul'}
+            options={masonryOptions}
+            disableImagesLoaded={false}
+            updateOnEachImageLoad={false}
+            imagesLoadedOptions={imagesLoadedOptions}
+        >
+            {this.props.data.shopGallery.edges.map((img, idx) =>  (
+              <div className="col-lg-2 col-md-2 col-sm-6" key={idx} >
+                <div  className="d-block mb-4 h-100 gallery" >
+                  <Img className="slider-for" fluid={img.node.childImageSharp.fluid}/>
+                </div>
+              </div>
+            ))}
+        </Masonry>
+      </Layout>
+    )
+  }
 }
 
 export const galleryQuery = graphql`
