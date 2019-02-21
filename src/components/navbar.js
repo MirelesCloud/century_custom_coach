@@ -11,6 +11,7 @@ class Navigation extends React.Component {
     this.state = {
       isOpen: false,
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   toggle() {
@@ -19,17 +20,33 @@ class Navigation extends React.Component {
     })
   }
 
+  handleScroll() {
+    this.setState({scroll: window.scrollY});
+  }
+
+  componentDidMount() {
+    const el = document.querySelector('nav');
+    this.setState({top: el.offsetTop, height: el.offsetHeight});
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentDidUpdate() {
+    this.state.scroll > this.state.top ?
+      document.body.style.paddingTop = `${this.state.height}px` :
+      document.body.style.paddingTop = 0;
+  }
+
   render() {
+    let navClass = this.state.scroll > this.state.top ? "fixed-top" : "";
     return (
-      <section>
-        <Navbar className="navbar-dark bg-black" sticky="top" expand="md" >
+      <section className={navClass} style={{borderBottom: "1px solid #c21605"}}>
+        <Navbar className="navbar-dark bg-black" id="nav" expand="md"  >
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
               </NavItem>
-
               <NavItem>
                 <Link className="nav-link" to="/about">About</Link>
               </NavItem>
@@ -62,9 +79,7 @@ class Navigation extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-
       </section>
-
     )
   }
 }

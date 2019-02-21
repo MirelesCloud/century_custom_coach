@@ -31,27 +31,27 @@ const AboutTemplate = () => (
           <section className="about-section padd-2" style={{
                   backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
            <div className="container">
-               <div className="row">
-                 <div className="col-md-6 col-sm-12 col-xs-12">
-                       <div className="single-item">
-                           <figure className="image-box">
-                             <Img fluid={data.about.childImageSharp.fluid} alt="header"/>
-                           </figure>
-                       </div>
-                   </div>
-                   <div className="col-md-6 col-sm-12 col-xs-12">
-                     <div className="single-item style-two">
-                         <div className="sec-title">
-                       <h2 id="about">About  <span>Century<span style={{color:"#000000"}}>Custom</span>Coach</span></h2>
-                       <h3>If It Runs On Gas…We’ll Fix It!</h3>
-                     </div>
-                       <p>Over 30 years experience in all makes and models, foreign and Domestic. We adjust our services to meet the needs of our customers</p>
-                       <p className="style-2">We offer complete auto care for your vehicle. Whether it’s time for your next factory recommended maintenance visit, a routine oil change, new tires, or repair services on your brakes, muffler and exhaust, suspension, air conditioner, or any other mechanical or electrical component of your car, Century Custom Coach is in your neighborhood and ready to serve you.</p>
-                       <div className="link_btn">
-                         <Pulse><Link to="/contact" className="btn-style-one">Contact Us</Link></Pulse>
-                       </div>
+             <div className="row">
+               <div className="col-md-6 col-sm-12 col-xs-12">
+                 <div className="single-item">
+                   <figure className="image-box">
+                     <Img fluid={data.about.childImageSharp.fluid} alt="header"/>
+                   </figure>
+                 </div>
+                </div>
+                <div className="col-md-6 col-sm-12 col-xs-12">
+                   <div className="single-item style-two">
+                    <div className="sec-title">
+                     <h2 id="about">About  <span>Century<span style={{color:"#000000"}}>Custom</span>Coach</span></h2>
+                     <h3>If It Runs On Gas…We’ll Fix It!</h3>
                     </div>
+                     <p>Over 30 years experience in all makes and models, foreign and Domestic. We adjust our services to meet the needs of our customers</p>
+                     <p className="style-2">We offer complete auto care for your vehicle. Whether it’s time for your next factory recommended maintenance visit, a routine oil change, new tires, or repair services on your brakes, muffler and exhaust, suspension, air conditioner, or any other mechanical or electrical component of your car, Century Custom Coach is in your neighborhood and ready to serve you.</p>
+                     <div className="link_btn">
+                       <Pulse><Link to="/contact" className="btn-style-one">Contact Us</Link></Pulse>
+                     </div>
                   </div>
+                </div>
                </div>
            </div>
        </section>

@@ -8,9 +8,12 @@ import Gallery from '../../components/gallery'
 import Reviews from '../../components/reviews'
 
 
+
+
 const Home = () => (
   <Layout>
     <Intro/>
+
     <About/>
     <Services/>
     <Gallery/>

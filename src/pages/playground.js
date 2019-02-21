@@ -97,4 +97,5 @@ function ThirdTest(props) {
 
 
 
-export default Test
+
+export default AnotherTest

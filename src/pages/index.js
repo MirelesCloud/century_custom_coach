@@ -8,7 +8,6 @@ import SEO from '../components/SEO'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
-
 import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
@@ -21,9 +20,6 @@ import '../css/contact.css'
 import '../css/responsive.css'
 import '../css/animate.min.css'
 import '../css/fonts/flaticon.css'
-
-
-
 
 const TemplateWrapper = ({data}) => (
   <section>
@@ -38,6 +34,7 @@ const TemplateWrapper = ({data}) => (
       >
       <FontAwesomeIcon icon={faAngleUp} className="fa-2x ml-3 mt-2 " style={{color:"#fff"}}/>
     </ScrollToTop>
+
   </section>
 )
 
