@@ -5,6 +5,20 @@ import { StaticQuery, graphql } from 'gatsby'
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
 
+import '../../node_modules/animate.css/animate.min.css'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
+import '../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import '../../node_modules/slick-carousel/slick/slick.css'
+import '../../node_modules/slick-carousel/slick/slick-theme.css'
+
+import '../css/main.css'
+import '../css/special.css'
+import '../css/contact.css'
+import '../css/responsive.css'
+import '../css/animate.min.css'
+import '../css/fonts/flaticon.css'
+
 import Header from './header'
 import Footer from './footer'
 
