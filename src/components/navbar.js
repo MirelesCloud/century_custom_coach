@@ -39,7 +39,7 @@ class Navigation extends React.Component {
   render() {
     let navClass = this.state.scroll > this.state.top ? "fixed-top" : "";
     return (
-  
+
       <section className={navClass} >
         <Navbar className="navbar-dark bg-black" id="nav" expand="md"  style={{borderBottom: "1px solid #c21605"}}>
           <NavbarToggler onClick={this.toggle}/>
@@ -61,7 +61,7 @@ class Navigation extends React.Component {
                 <Link className="nav-link" to="/reviews" style={{color:"#fff"}}>Testimonials</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle caret className="bg-black nav-link" style={{borderStyle:"none", fontSize:"1.3rem", color:"#fff"}} >
+                <DropdownToggle caret className="navbar-dark bg-black nav-link" style={{borderStyle:"none", fontSize:"1.3rem"}} >
                   Services
                 </DropdownToggle>
                 <DropdownMenu className="text-muted">

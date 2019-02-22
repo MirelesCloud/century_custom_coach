@@ -95,4 +95,6 @@ function ThirdTest(props) {
   )
 }
 
-export default GalleryTest
+
+
+export default Test
