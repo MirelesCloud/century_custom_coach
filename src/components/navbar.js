@@ -41,7 +41,7 @@ class Navigation extends React.Component {
     return (
 
       <section className={navClass} >
-        <Navbar className="navbar-dark bg-black" id="nav" expand="md"  style={{borderBottom: "1px solid #c21605"}}>
+        <Navbar className="navbar" color="black" id="nav" expand="md"  style={{borderBottom: "1px solid #c21605"}}>
           <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto pt-2" navbar >
@@ -61,7 +61,7 @@ class Navigation extends React.Component {
                 <Link className="nav-link" to="/reviews" style={{color:"#fff"}}>Testimonials</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle caret className="navbar-dark bg-black nav-link" style={{borderStyle:"none", fontSize:"1.3rem"}} >
+                <DropdownToggle caret className="nav-link" style={{borderStyle:"none", fontSize:"1.3rem"}} >
                   Services
                 </DropdownToggle>
                 <DropdownMenu className="text-muted">
