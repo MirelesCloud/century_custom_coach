@@ -145,10 +145,7 @@
 		text-align: center;
 	}
 
-	#nav {
-		background-color: #c21605;
-	}
-
+	
 }
 
 @media (max-width: 767px){
@@ -235,7 +232,7 @@
   .main-menu .navbar-header{
     padding: 14px 6px;
     float: none;
-    background: #c21605;
+
   }
 
   .main-menu .navbar-toggle {

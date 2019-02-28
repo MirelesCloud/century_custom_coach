@@ -41,8 +41,14 @@ class Navigation extends React.Component {
     return (
 
       <section className={navClass} >
-        <Navbar className="navbar" color="black" id="nav" expand="md"  style={{borderBottom: "1px solid #c21605"}}>
-          <NavbarToggler onClick={this.toggle}/>
+        <Navbar className="navbar bg-black" expand="md"  style={{
+            borderBottom: "1px solid #c21605",
+            fontSize:"1.3rem"
+          }}>
+          <div className="navbar-toggler">
+            <NavbarToggler onClick={this.toggle} className="navbar-toggler-icon"/>
+          </div>
+
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto pt-2" navbar >
               <NavItem>
@@ -61,7 +67,7 @@ class Navigation extends React.Component {
                 <Link className="nav-link" to="/reviews" style={{color:"#fff"}}>Testimonials</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle caret className="nav-link" style={{borderStyle:"none", fontSize:"1.3rem"}} >
+                <DropdownToggle caret className="nav-link" style={{borderStyle:"none", fontSize:"1.3rem", backgroundColor:"#000"}} >
                   Services
                 </DropdownToggle>
                 <DropdownMenu className="text-muted">
@@ -84,5 +90,7 @@ class Navigation extends React.Component {
     )
   }
 }
+
+
 
 export default Navigation
