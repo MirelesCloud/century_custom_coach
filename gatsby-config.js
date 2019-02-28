@@ -27,7 +27,13 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Century Custom Coach`,
+        short_name: `centurycustomcoach`,
         start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#c21605`,
+        display: `standalone`,
+        include_favicon: false,
+
       }
     },
     {
@@ -70,6 +76,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
