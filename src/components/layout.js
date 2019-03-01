@@ -9,6 +9,7 @@ import '../../node_modules/animate.css/animate.min.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css'
 import '../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import '../../node_modules/react-id-swiper/src/styles/css/swiper.css'
 
 
 import '../css/main.css'
@@ -58,8 +59,6 @@ const Layout = ({children}) => (
           <link rel="canonical" href={data.site.siteMetadata.url} />
           <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
           <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"/>
-
 
             <html lang="en" />
           </Helmet>
