@@ -41,23 +41,23 @@ const Header = ({ siteTitle, menuLinks }) => (
         <div className="pull-right upper-right clearfix" >
           <div className="upper-column info-box">
             <div className="icon-box"><span><FontAwesomeIcon icon={faPhoneVolume} className="fa-2x m-2" /></span></div>
-            <ul className="list-unstyled" id="header-responsive">
+            <ul className="list-unstyled">
               <li><strong>Call Us</strong></li>
-              <li id="header-responsive"><a href="tel:1-310-478-5855">(310) 478-5855</a></li>
+              <li><a href="tel:1-310-478-5855">(310) 478-5855</a></li>
             </ul>
           </div>
           <div className="upper-column info-box">
             <div className="icon-box"><span><FontAwesomeIcon icon={faMapMarkerAlt} className="fa-2x m-2" /></span></div>
             <ul className="list-unstyled">
               <li><strong>Our Address</strong></li>
-              <li id="header-responsive">2237 Barry Ave, Los Angeles, CA 90064</li>
+              <li>2237 Barry Ave, Los Angeles, CA 90064</li>
             </ul>
           </div>
           <div className="upper-column info-box">
             <div className="icon-box"><span><FontAwesomeIcon icon={faClock} className="fa-2x m-2" /></span></div>
             <ul className="list-unstyled">
               <li><strong>Working Hour</strong></li>
-              <li id="header-responsive">Mon- Fri : 8 am - 6 pm</li>
+              <li>Mon- Fri : 8 am - 6 pm</li>
             </ul>
           </div>
         </div>

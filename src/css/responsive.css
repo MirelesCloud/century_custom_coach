@@ -282,12 +282,12 @@
 	  margin-top: -100px;
 	}
 
-	#title-heading {
-		font-size: 1.7rem;
+	.header-upper .info-box li {
+		font-size: 0.8rem;
 	}
 
-	#header-responsive {
-		font-size: 0.8rem;
+	#title-heading {
+		font-size: 1.7rem;
 	}
 
 	#about {
