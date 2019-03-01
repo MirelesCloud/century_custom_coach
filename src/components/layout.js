@@ -56,9 +56,7 @@ const Layout = ({children}) => (
           <meta charSet="utf-8" />
 
           <link rel="canonical" href={data.site.siteMetadata.url} />
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
           <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css"/>
           <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 

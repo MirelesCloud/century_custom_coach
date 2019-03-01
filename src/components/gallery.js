@@ -1,5 +1,4 @@
 import React from 'react'
-//import Modal from 'react-responsive-modal'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -105,9 +104,6 @@ const Gallery = () => (
                         </div>
                     </article>
                   </div>
-
-
-
               </div>
         </section>
           </>

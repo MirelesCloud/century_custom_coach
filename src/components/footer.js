@@ -11,7 +11,7 @@ const Footer = () => (
       query FooterQuery {
         background: file(relativePath: {eq: "images/tires.jpg"}) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
+            fluid {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -44,14 +44,10 @@ const Footer = () => (
                     <div className="footer-widget about-widget">
                       <figure className="image-box">
                         <h2 ><strong style={{color:"#fff"}}>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h2>
-
                       </figure>
                       <p>Contact us today and get world class service for your car or truck.  We are here to service you.</p>
-
-
                     </div>
                   </div>
-
                   <div className="col-md-4 col-sm-6">
                     <div className="footer-widget quick-links">
                       <h3 className="title">Our Services</h3>
@@ -91,14 +87,10 @@ const Footer = () => (
             <small>Icons made by <a href="https://www.flaticon.com/packs/car-repair-3" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/"  title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 	rel="noopener noreferrer" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small>
           </div>
         </div>
-
       </section>
-
       </>
     )}
     />
 )
-
-
 
 export default Footer
