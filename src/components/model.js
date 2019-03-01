@@ -3,10 +3,6 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import Swiper from 'react-id-swiper';
 
-
-import BackgroundImage from '../images/engine-background.jpg'
-
-
 const params = {
       slidesPerView: 6,
       spaceBetween: 30,
@@ -28,7 +24,7 @@ const Model = () => (
     <StaticQuery
       query={graphql`
         query ModelImageQuery {
-          background: file(relativePath: {eq: "images/image-1.png"}) {
+          background: file(relativePath: {eq: "images/engine-background.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 1080) {
                 ...GatsbyImageSharpFluid
@@ -88,7 +84,7 @@ const Model = () => (
       `}
         render={data => (
           <>
-      <section className="models-section" style={{backgroundImage:`url(${BackgroundImage})`, border:"1px solid #000"}}>
+      <section className="models-section" style={{backgroundImage:`url(${data.background.childImageSharp.fluid.src})`, border:"1px solid #000"}}>
         <div className="auto-container">
             <div className="sponsors-outer">
                 <Swiper {...params}>

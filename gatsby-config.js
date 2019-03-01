@@ -27,7 +27,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Century Custom Coach`,
-        short_name: `centurycustomcoach`,
+        short_name: `CCC`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#c21605`,

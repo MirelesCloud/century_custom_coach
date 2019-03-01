@@ -175,7 +175,8 @@ export default function Reviews({ data }) {
           </Slider>
         </div>
         <div className="sec-title mt-5">
-          <h4>Read more amazing Yelp reviews or leave a comment yourself <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?osq=century+custom+coach" target="_blank" rel="noopener noreferrer">here</a></h4>
+          <h4>Read more amazing reviews or leave a comment yourself <a href="https://www.yelp.com/biz/century-custom-coach-los-angeles?osq=century+custom+coach" target="_blank" rel="noopener noreferrer">on Yelp here</a></h4>
+
         </div>
       </div>
     </section>
