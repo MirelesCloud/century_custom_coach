@@ -41,7 +41,7 @@ const IntroTemplate = () => (
         <>
         <div className="rev_slider_wrapper">
           <div className="rev_slider">
-            <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={false} showThumbs={false}>
+            <Carousel infiniteLoop={true} autoPlay={true} interval={5000} transitionTime={2000} dynamicHeight={false} showThumbs={false} showArrows={false} showIndicators={false}>
               <div >
                 <Fade top>
                   <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
@@ -54,10 +54,7 @@ const IntroTemplate = () => (
                  </div>
               </div>
                  <div>
-                     <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
-
-
-
+                   <Img fluid={data.auto2.childImageSharp.fluid} alt="header 2"/>
                   <div className="carousel-header-container">
                    <h1 className="carousel-header">Expert <span style={{color:"#c21605"}}>Paint</span>  and <span style={{color:"#c21605"}}>Body</span> Shop</h1>
                   </div>

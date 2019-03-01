@@ -46,7 +46,7 @@ class Navigation extends React.Component {
             fontSize:"1.3rem"
           }}>
           <div className="navbar-toggler">
-            <NavbarToggler onClick={this.toggle} className="navbar-toggler-icon"/>
+            <NavbarToggler onClick={this.toggle} className="navbar-toggler-icon" aria-label="Toggle navigation"/>
           </div>
 
           <Collapse isOpen={this.state.isOpen} navbar>
