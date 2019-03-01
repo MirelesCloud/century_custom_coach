@@ -6,7 +6,7 @@ import '../css/fonts/flaticon.css'
 import LowerBackground from './lower-banner'
 
 const ServicesTemplate = (props) => (
-  <section id='services'>
+  <section>
     <StaticQuery
       query={graphql`
         query ServiceQuery {
