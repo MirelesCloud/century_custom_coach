@@ -16,21 +16,21 @@ const IntroTemplate = () => (
         query ImageQuery {
           auto1: file(relativePath: {eq: "images/home/rawpixel-741689-unsplash.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 2000) {
-                ...GatsbyImageSharpFluid
+              fluid {
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
           auto2: file(relativePath: {eq: "images/home/whereslugo-465120-unsplash.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 2000) {
+              fluid {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
-          auto3: file(relativePath: {eq: "images/home/anders-nord-415747-unsplash.jpg"}) {
+          auto3: file(relativePath: {eq: "images/home/david-hellmann-600264-unsplash.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 2000) {
+              fluid {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }

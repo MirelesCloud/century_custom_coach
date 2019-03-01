@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-
 import Layout from '../components/layout'
 
 export default function AboutTemplate({ data}) {
