@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
 import Slider from 'react-slick'
@@ -226,3 +227,12 @@ const Reviews = () => (
 )
 
 export default Reviews
+
+Reviews.propTypes = {
+  review1: PropTypes.string,
+  review2: PropTypes.string,
+  review3: PropTypes.string,
+  review4: PropTypes.string,
+  review5: PropTypes.string,
+  review6: PropTypes.string
+}
