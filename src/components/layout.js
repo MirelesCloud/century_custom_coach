@@ -13,8 +13,6 @@ import '../../node_modules/react-id-swiper/src/styles/css/swiper.css'
 
 
 import '../css/main.css'
-import '../css/special.css'
-import '../css/contact.css'
 import '../css/responsive.css'
 import '../css/animate.min.css'
 import '../css/fonts/flaticon.css'
