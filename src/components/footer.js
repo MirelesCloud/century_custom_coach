@@ -82,7 +82,7 @@ const Footer = () => (
             </div>
           </footer>
           <div className="footer-bottom text-center">
-            <div className="copyright-text">&copy; <a href="https://mirelescloud.com"><span>MirelesCloud</span></a> 2019. All Rights Reserved</div>
+            <div className="copyright-text" aria-label="MirelesCloud">&copy; <a href="https://mirelescloud.com" style={{color:"#fff"}}>MirelesCloud</a> 2019. All Rights Reserved</div>
             <br/>
             <small>Icons made by <a href="https://www.flaticon.com/packs/car-repair-3" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/"  title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 	rel="noopener noreferrer" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small>
           </div>

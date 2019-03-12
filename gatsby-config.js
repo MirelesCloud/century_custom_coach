@@ -9,16 +9,6 @@ module.exports = {
     url: `https://www.centurycustomcoach.com`,
     description: `Automotive mechanic, repair, paint and body shop`,
     image: `/src/images/Danny.jpg`,
-    menuLinks: [
-      {
-        name: 'home',
-        link: '/'
-      },
-      {
-        name: 'contact',
-        link: '/contact'
-      }
-    ]
   },
 
   plugins: [
@@ -32,7 +22,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#c21605`,
         display: `standalone`,
-        include_favicon: false,
+        crossOrigin: `use-credentials`,
 
       }
     },
