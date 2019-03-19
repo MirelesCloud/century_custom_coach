@@ -633,7 +633,6 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 .header-upper {
   position: relative;
 	border-bottom: 1px solid #c21605;
-
   padding: 25px 50px 20px;
   background: #ffffff;
   transition: all 500ms ease;
@@ -642,6 +641,10 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   z-index: 5;
+}
+
+.header-upper h1 {
+	font-size: 5rem;
 }
 .header-upper .logo img {
   position: relative;
@@ -718,8 +721,6 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   text-transform: capitalize;
   font-family: 'Montserrat', sans-serif;
 }
-
-
 
 /*==============================================
   5.  Mainmenu Area Css
@@ -2800,7 +2801,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   background-position:center center;
   color:#ffffff;
   background-image:url(../images/tires.jpg);
-  z-index:1;
+  z-index:2;
 }
 .testimonial:before{
   content: "";
@@ -3230,6 +3231,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .features .sec-title h2:before{
   left: 50%;
   margin-left: -61px;

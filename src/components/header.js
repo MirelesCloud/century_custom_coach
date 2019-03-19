@@ -24,15 +24,15 @@ const Header = ({ siteTitle, menuLinks }) => (
         <div className="pull-left logo-outer">
           <div className="logo-box d-none d-md-block">
             <Fade right>
-              <Link to="/"><h1 id="title" style={{color:"#000", fontSize: "5rem"}}><strong>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h1></Link>
+              <Link to="/"><h1 className="title" style={{color:"#000" }}><strong>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h1></Link>
             </Fade>
           </div>
             <div className="logo-box d-md-none text-center" style={{marginTop: "1rem"}}>
               <Fade left>
-                <Link to="/" id="title-heading" >
-                  <h1 className="m-0" style={{color:"#000", fontSize: "5rem"}}>Century</h1>
-                  <h1 className="m-0"><span style={{color:" #c21605", fontSize: "5rem"}}>Custom</span></h1>
-                  <h1 style={{color:"#000", fontSize: "5rem"}}>Coach</h1>
+                <Link to="/">
+                  <h1 className="m-0" style={{color:"#000"}}>Century</h1>
+                  <h1 className="m-0"><span style={{color:" #c21605"}}>Custom</span></h1>
+                  <h1 style={{color:"#000"}}>Coach</h1>
                 </Link>
               </Fade>
               <hr/>

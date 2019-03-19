@@ -46,6 +46,28 @@ const Footer = () => (
                         <h2 ><strong style={{color:"#fff"}}>Century <span style={{color:" #c21605"}}>Custom </span>Coach</strong></h2>
                       </figure>
                       <p>Contact us today and get world class service for your car or truck.  We are here to service you.</p>
+                        <a target="_top" className="nav-link mt-5"
+                          style={{
+                          backgroundColor: "#000",
+                          color: "white",
+                          height: "40px",
+                          textTransform: "uppercase",
+                          letterSpacing: "1px",
+                          lineHeight: "38px",
+                          padding: "0 28px",
+                          borderRadius: "3px",
+                          fontWeight: "500",
+                          fontSize: "16px",
+                          cursor: "pointer",
+                          display: "inline-block",
+                          border: "1px solid #c21605",
+                          marginTop: "5px",
+                          marginLeft: "10px"
+                          }}
+
+                           href="https://squareup.com/appointments/book/8R51ZRXCR3MXJ/century-custom-coach-los-angeles-ca" rel="nofollow">
+                           Book An Appointment
+                         </a>
                     </div>
                   </div>
                   <div className="col-md-4 col-sm-6">

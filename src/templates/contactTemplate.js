@@ -63,8 +63,20 @@ export default function Contact({ data }) {
                     <div className="col-md-4 col-sm-6 col-xs-12 ">
                         <div className="contact-info" >
                             <div className="icon-box"><i className="flaticon-message"></i></div>
-                            <h5 ><a href="mailto:centurycustomcoach@gmail.com" style={{color:"#fff"}}>{frontmatter.tag}</a></h5>
-                            <span>Today</span>
+                              <h5><a target="_top" className="nav-link"
+                                style={{
+                                color: "white",
+                                height: "40px",
+                                textTransform: "uppercase",
+                                letterSpacing: "1px",
+                                borderRadius: "3px",
+                                fontSize: "16px",
+                                cursor: "pointer",
+                                display: "inline-block",
+                                }}
+                                 href="https://squareup.com/appointments/book/8R51ZRXCR3MXJ/century-custom-coach-los-angeles-ca" rel="nofollow">
+                                 Book An Appointment
+                               </a></h5>
                         </div>
                     </div>
                 </div>
