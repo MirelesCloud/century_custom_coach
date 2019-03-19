@@ -199,7 +199,6 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
   bottom: 100px;
   left: 86%;
   z-index: 1;
-
 }
 
 .to-top:hover {
@@ -253,6 +252,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 }
 
 /*btn style*/
+
 
 /*Btn Style One*/
 
@@ -3524,7 +3524,7 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 
 .carousel-header {
   font-size: 6vw;
-  
+
   color: #fff;
   padding: 0.7rem;
 

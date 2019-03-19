@@ -21,7 +21,6 @@ const TemplateWrapper = ({data}) => (
       >
       <FontAwesomeIcon icon={faAngleUp} className="fa-2x ml-3 mt-2 " style={{color:"#fff"}}/>
     </ScrollToTop>
-
   </section>
 )
 

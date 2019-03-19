@@ -75,7 +75,6 @@ const Layout = ({children}) => (
           <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <div className="boxed_wrapper">{children}</div>
           <Footer/>
-
         </>
       )}
     />

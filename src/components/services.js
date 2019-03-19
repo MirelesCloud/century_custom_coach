@@ -25,8 +25,8 @@ const ServicesTemplate = (props) => (
                 backgroundImage: `url(${data.background.childImageSharp.fluid.src})`}}>
     <div className="container">
       <div className="sec-title text-center">
-                <h2>Our <span>Services</span></h2>
-            </div>
+        <h2>Our <span>Services</span></h2>
+      </div>
       <div className="row">
         <div className="col-md-3 col-sm-6 col-xs-12">
           <div className="single-item">
@@ -127,6 +127,31 @@ const ServicesTemplate = (props) => (
           </div>
         </div>
       </div>
+      <div className="text-center mt-5">
+        <a target="_top" className="nav-link"
+          style={{
+          backgroundColor: "#000",
+          color: "white",
+          height: "40px",
+          textTransform: "uppercase",
+          letterSpacing: "1px",
+          lineHeight: "38px",
+          padding: "0 28px",
+          borderRadius: "3px",
+          fontWeight: "500",
+          fontSize: "16px",
+          cursor: "pointer",
+          display: "inline-block",
+          border: "1px solid #c21605",
+          marginTop: "5px",
+          marginLeft: "10px"
+          }}
+
+           href="https://squareup.com/appointments/book/8R51ZRXCR3MXJ/century-custom-coach-los-angeles-ca" rel="nofollow">
+           Book An Appointment
+         </a>
+      </div>
+
     </div>
   </section>
         </>

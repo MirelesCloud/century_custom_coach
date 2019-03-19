@@ -61,7 +61,7 @@ export default function AboutTemplate({ data}) {
 		                    <div className="text">
 		                        <p>{ frontmatter.about.feature.feature1.desc }</p>
 		                    </div>
-		                    <div className="link"><i className="fa fa-long-arrow-right"></i>read more </div>
+		                    <div className="link"><i className="fa fa-long-arrow-right"></i></div>
 		                </div>
 		            </div>
 		            <div className="col-md-4 col-sm-6 col-xs-12">
@@ -70,7 +70,7 @@ export default function AboutTemplate({ data}) {
 		                    <div className="text">
 		                        <p>{ frontmatter.about.feature.feature2.desc }</p>
 		                    </div>
-		                    <div className="link"><i className="fa fa-long-arrow-right"></i>read more </div>
+		                    <div className="link"><i className="fa fa-long-arrow-right"></i></div>
 		                </div>
 		            </div>
 		            <div className="col-md-4 col-sm-6 col-xs-12">
@@ -79,7 +79,7 @@ export default function AboutTemplate({ data}) {
 		                    <div className="text">
 		                        <p>{ frontmatter.about.feature.feature3.desc }</p>
 		                    </div>
-		                    <div className="link"><i className="fa fa-long-arrow-right"></i>read more </div>
+		                    <div className="link"><i className="fa fa-long-arrow-right"></i></div>
 		                </div>
 		            </div>
 

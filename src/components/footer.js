@@ -43,7 +43,7 @@ const Footer = () => (
                   <div className="col-md-4 col-sm-6">
                     <div className="footer-widget about-widget">
                       <figure className="image-box">
-                        <h2 ><strong style={{color:"#fff"}}>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h2>
+                        <h2 ><strong style={{color:"#fff"}}>Century <span style={{color:" #c21605"}}>Custom </span>Coach</strong></h2>
                       </figure>
                       <p>Contact us today and get world class service for your car or truck.  We are here to service you.</p>
                     </div>

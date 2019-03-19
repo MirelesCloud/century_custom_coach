@@ -83,6 +83,29 @@ class Navigation extends React.Component {
                   <DropdownItem><Link className="text-muted" to="/diagnostics">Diagnostics & Tune-up</Link></DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <a target="_top" style={{
+                  backgroundColor: "#000",
+                  color: "white",
+                  height: "40px",
+                  textTransform: "uppercase",
+                  letterSpacing: "1px",
+                  lineHeight: "38px",
+                  padding: "0 28px",
+                  borderRadius: "3px",
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  cursor: "pointer",
+                  display: "inline-block",
+                  border: "1px solid #c21605",
+                  marginTop: "5px",
+                  marginLeft: "10px"
+                  }}
+                  className="nav-link"
+                   href="https://squareup.com/appointments/book/8R51ZRXCR3MXJ/century-custom-coach-los-angeles-ca" rel="nofollow">
+                   Book An Appointment
+                 </a>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
