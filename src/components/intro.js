@@ -46,7 +46,6 @@ const IntroTemplate = () => (
                 <Fade top>
                   <Img fluid={data.auto1.childImageSharp.fluid} alt="header"/>
                 </Fade>
-
                  <div className="carousel-header-container">
                    <Slide bottom>
                      <h1 className="carousel-header">Full <span style={{color:"#c21605"}}>Service</span> Automotive <span style={{color:"#c21605"}}>Repair</span> and Maintenance</h1>

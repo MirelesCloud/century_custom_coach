@@ -59,6 +59,14 @@
 
 
 @media (max-width: 991px) {
+	.carousel-header {
+		font-size: 5.5rem;
+	}
+
+	.features{
+	  margin-top: -100px;
+	}
+
 	.nav_side_content {
 	    position: absolute;
 	    right: 15px;
@@ -78,7 +86,6 @@
 	    float: left;
 	    width: 100%;
 	}
-
 
 	.theme_menu {
 		background: #f7f7f7;
@@ -159,8 +166,12 @@
 		margin-top: -5px;
 	}
 
+	.carousel-header {
+		font-size: 5rem;
+	}
+
 	.features{
-	  margin-top: -75px;
+	  margin-top: -50px;
 	}
 
 	.rev_slider_wrapper .tparrows{
@@ -183,6 +194,10 @@
 
 	.page-title{
 		text-align:center;
+	}
+
+	.carousel-header {
+		font-size: 3.5rem;
 	}
 
 	.features{
@@ -257,6 +272,9 @@
 	.header-upper h1 {
 		font-size: 5rem;
 	}
+	.carousel-header {
+		font-size: 3rem;
+	}
 	.top-bar{
 		padding-top: 10px;
 	}
@@ -272,12 +290,17 @@
 	#about {
 		font-size: 2rem;
 	}
+
+
 }
 
 
 
 
 @media (max-width: 430px){
+	.carousel-header {
+		font-size: 2.3rem;
+	}
 	.parallax-style .btn-style-eight{
 		display: none;
 	}
