@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { Collapse, Navbar,  NavbarToggler, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 class Navigation extends React.Component {
   constructor() {
@@ -39,35 +39,28 @@ class Navigation extends React.Component {
   render() {
     let navClass = this.state.scroll > this.state.top ? "fixed-top" : "";
     return (
-
       <section className={navClass} >
-        <Navbar className="navbar bg-black" expand="md"  style={{
-            borderBottom: "1px solid #c21605",
-            fontSize:"1.3rem"
-          }}>
-          <div className="navbar-toggler">
-            <NavbarToggler onClick={this.toggle} className="navbar-toggler-icon" aria-label="Toggle navigation"/>
-          </div>
-
+        <Navbar className="navbar navbar-expand-md navbar-dark bg-black">
+          <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto pt-2" navbar >
               <NavItem>
-                <Link className="nav-link" to="/" style={{color:"#fff"}}>Home <span className="sr-only">(current)</span></Link>
+                <Link className="nav-link" to="/" >Home <span className="sr-only">(current)</span></Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/about" style={{color:"#fff"}}>About</Link>
+                <Link className="nav-link" to="/about" >About</Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/contact" style={{color:"#fff"}}>Contact</Link>
+                <Link className="nav-link" to="/contact" >Contact</Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/gallery" style={{color:"#fff"}}>Gallery</Link>
+                <Link className="nav-link" to="/gallery" >Gallery</Link>
               </NavItem>
               <NavItem>
-                <Link className="nav-link" to="/reviews" style={{color:"#fff"}}>Testimonials</Link>
+                <Link className="nav-link" to="/reviews" >Testimonials</Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle caret className="nav-link" style={{borderStyle:"none", fontSize:"1.3rem", backgroundColor:"#000"}} >
+                <DropdownToggle caret className="nav-link dropdown-toggle" >
                   Services
                 </DropdownToggle>
                 <DropdownMenu className="text-muted">
@@ -91,17 +84,17 @@ class Navigation extends React.Component {
                   textTransform: "uppercase",
                   letterSpacing: "1px",
                   lineHeight: "38px",
-                  padding: "0 28px",
+                  padding: "0 20px",
                   borderRadius: "3px",
                   fontWeight: "500",
-                  fontSize: "16px",
+                  fontSize: "13px",
                   cursor: "pointer",
                   display: "inline-block",
                   border: "1px solid #c21605",
                   marginTop: "5px",
                   marginLeft: "10px"
                   }}
-                  className="nav-link"
+                  className="nav-link appointment-btn"
                    href="https://squareup.com/appointments/book/8R51ZRXCR3MXJ/century-custom-coach-los-angeles-ca" rel="nofollow">
                    Book An Appointment
                  </a>
@@ -113,7 +106,5 @@ class Navigation extends React.Component {
     )
   }
 }
-
-
 
 export default Navigation

@@ -725,81 +725,30 @@ input,textarea {display: block; font-size: 16px; line-height: 28px; outline: non
 /*==============================================
   5.  Mainmenu Area Css
 ===============================================*/
-.mainmenu-area {
-    z-index: 222;
-    position: relative;
-}
-.mainmenu-area .menu-column{
-  background: #000;
-}
-.main-menu {
-  position: relative;
+.navbar {
+	border-bottom: 3px solid #c21605;
+
 }
 
-.navbar-collapse {
-  padding: 0px
+.navbar-toggler {
+	border-color: rgb(255,255,255);
+	opacity: 1;
+
+}
+.navbar-toggler .navbar-toggler-icon {
+
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navigation {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-}
-.navigation li {
-  display: inline-block;
+.navbar .nav-link {
+	color: #fff;
+	background-color: inherit;
+	border: none;
 }
 
-.navigation li a {
-  padding: 25px 20px 25px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  }
-
-.navigation > li:hover > a {
-  color: #fff;
-}
-
-.navigation > li > ul {
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  background: #333;
-  width: 225px;
-  z-index: 999;
-  display: none;
-}
-
-.navigation > li > ul > li {
-  position: relative;
-  display: block;
-  border-bottom: 1px solid #222;
-}
-
-.navigation > li > ul > li > a {
-  color: #ffffff;
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 12px 20px;
-  margin: 0;
-  text-transform: capitalize;
-  transition: all 500ms ease 0s;
-}
-
-.navigation > li > ul > li:hover{
-  background: #000;
-  transition: .5s;
-}
-.navigation > li > ul > li:hover > a {
-  color: #fff;
-}
-
-.nav-link {
-  padding: 10px 10px;
-  display:inline-block;
+.navbar .nav-link:hover {
+	background-color: inherit;
+	border: none;
 }
 
 /*========= third-menu ===============*/
