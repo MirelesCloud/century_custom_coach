@@ -88,6 +88,7 @@ class Navigation extends React.Component {
                   borderRadius: "3px",
                   fontWeight: "500",
                   fontSize: "13px",
+                  position: "absolute",
                   cursor: "pointer",
                   display: "inline-block",
                   border: "1px solid #c21605",
