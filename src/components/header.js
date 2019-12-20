@@ -24,7 +24,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         <div className="pull-left logo-outer">
           <div className="logo-box d-none d-md-block">
             <Fade right>
-              <Link to="/"><h1 className="title" style={{color:"#000" }}><strong>Century<span style={{color:" #c21605"}}>Custom</span>Coach</strong></h1></Link>
+              <Link to="/"><h1 className="" style={{color:"#000", fontWeight:"500" }}>Century<span style={{color:" #c21605"}}>Custom</span>Coach</h1></Link>
             </Fade>
           </div>
             <div className="logo-box d-md-none text-center" style={{marginTop: "1rem"}}>
