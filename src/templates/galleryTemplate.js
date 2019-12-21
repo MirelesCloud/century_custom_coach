@@ -18,7 +18,7 @@ export default class Gallery extends React.Component {
       nav1: null,
       nav2: null
     }
-    console.log(this.props.data)
+    
   }
 
   componentDidMount() {
